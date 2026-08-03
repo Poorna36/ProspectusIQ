@@ -1,5 +1,5 @@
 # Machine Learning Section — Engine Pipeline & Strategy
-### Sebii SME IPO Platform · AI/ML Architecture
+### ProspectusIQ SME IPO Platform · AI/ML Architecture
 
 ---
 
@@ -7,7 +7,7 @@
 
 The platform mandates a **Dual-Model Strategy** to prevent self-validation bias (where an LLM cannot reliably catch errors it was confident enough to generate). 
 
-This entire stack operates in isolation under the `sebii-hackathon/ml/` directory and exposes a stateless HTTP inference API to the Core Orchestration layer.
+This entire stack operates in isolation under the `prospectusiq/ml/` directory and exposes a stateless HTTP inference API to the Core Orchestration layer.
 
 | Component | Goal | Core Task |
 |---|---|---|
@@ -84,7 +84,7 @@ The `pipelines/draft_orchestrator.py` module executes the following logical sequ
 The internal folder structure explicitly separates the logic and rules for each component of the dual-model system.
 
 ```
-sebii-hackathon/
+prospectusiq/
 └── ml/
     │
     ├── ai-engine/                       # The live HTTP inference service

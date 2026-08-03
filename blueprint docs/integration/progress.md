@@ -1,5 +1,5 @@
 # Integration Section — Parallel Implementation Matrix
-### Sebii SME IPO Platform · Project Planning & Progress
+### ProspectusIQ SME IPO Platform · Project Planning & Progress
 
 ---
 

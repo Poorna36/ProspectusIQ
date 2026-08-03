@@ -1,11 +1,11 @@
 # Frontend Section — Project Structure & Contracts
-### Sebii SME IPO Platform · Interface Layer
+### ProspectusIQ SME IPO Platform · Interface Layer
 
 ---
 
 ## Overview
 
-The frontend layer is isolated entirely within the `sebii-hackathon/frontend/` directory. It comprises two distinct application contexts:
+The frontend layer is isolated entirely within the `prospectusiq/frontend/` directory. It comprises two distinct application contexts:
 
 | Application Context | Users | Role |
 |---|---|---|

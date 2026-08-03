@@ -1,5 +1,5 @@
 # Machine Learning Section — Data Sourcing & Preparation
-### Sebii SME IPO Platform · Dataset Strategy
+### ProspectusIQ SME IPO Platform · Dataset Strategy
 
 ---
 

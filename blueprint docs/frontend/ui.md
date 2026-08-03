@@ -1,5 +1,5 @@
 # Frontend Section — UI & Flow Specification
-### Sebii SME IPO Platform · Interface Contracts & User Journey
+### ProspectusIQ SME IPO Platform · Interface Contracts & User Journey
 
 ---
 

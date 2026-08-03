@@ -1,5 +1,5 @@
 # Integration Section — Analytics, Logging & Observability
-### Sebii SME IPO Platform · Operations Insight
+### ProspectusIQ SME IPO Platform · Operations Insight
 
 ---
 

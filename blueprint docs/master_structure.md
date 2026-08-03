@@ -1,9 +1,9 @@
-# Sebii SME IPO Platform
+# ProspectusIQ SME IPO Platform
 ## Master Project Directory Structure (Hackathon Optimized)
 
 ---
 
-This document provides the combined, highly-optimized directory structure for the entire Sebii Hackathon project. 
+This document provides the combined, highly-optimized directory structure for the entire ProspectusIQ Hackathon project. 
 
 **Hackathon Optimizations Applied:**
 1. **No Microservices:** The API Gateway, Core API, and Rules Engine have been merged into a single Node.js backend to eliminate network-hop debugging and CORS headaches.
@@ -11,7 +11,7 @@ This document provides the combined, highly-optimized directory structure for th
 3. **No WebSockets:** Real-time push was replaced with simple HTTP Short Polling for the frontend, saving hours of connection state management.
 
 ```text
-sebii-hackathon/
+prospectusiq/
 │
 ├── frontend/                          # TRACK 3: UI & Interface
 │   ├── portal/                        # Interface A (Company/Promoters)

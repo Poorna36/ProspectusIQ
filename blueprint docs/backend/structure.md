@@ -1,5 +1,5 @@
 # Backend Section — Project Structure & Tech Stack
-### Sebii SME IPO Platform · Service Layer
+### ProspectusIQ SME IPO Platform · Service Layer
 
 ---
 
@@ -7,14 +7,14 @@
 
 In a production environment, this backend would be split into microservices (Gateway, API, Rules Engine) with message queues. **For this hackathon, we are prioritizing extreme development velocity.**
 
-The entire backend layer is organized as a **Single Monolithic Node.js Service** running in the `sebii-hackathon/backend/` directory. All rules processing, database mutations, and asynchronous AI dispatching happen within this single process.
+The entire backend layer is organized as a **Single Monolithic Node.js Service** running in the `prospectusiq/backend/` directory. All rules processing, database mutations, and asynchronous AI dispatching happen within this single process.
 
 ---
 
 ## 1. Backend Folder Structure
 
 ```
-sebii-hackathon/
+prospectusiq/
 └── backend/
     ├── src/
     │   ├── routes/                    # API route definitions

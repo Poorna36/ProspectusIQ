@@ -1,6 +1,6 @@
-# Sebii
+# ProspectusIQ
 
-Sebii is a platform designed to automate and audit the drafting of SME IPO offer documents (DRHPs). It relies on a three-part system: an AI that drafts the text, a hardcoded rules engine that checks it against SEBI regulations, and an interface for human intermediaries (merchant bankers, lawyers) to finally certify the document.
+ProspectusIQ is a platform designed to automate and audit the drafting of SME IPO offer documents (DRHPs). It relies on a three-part system: an AI that drafts the text, a hardcoded rules engine that checks it against SEBI regulations, and an interface for human intermediaries (merchant bankers, lawyers) to finally certify the document.
 
 The goal is to stop relying purely on LLMs for legal docs and instead gate the AI behind deterministic rules and human sign-offs.
 

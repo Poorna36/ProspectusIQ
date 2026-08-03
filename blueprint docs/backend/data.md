@@ -1,5 +1,5 @@
 # Backend Section — Database Schemas & Data Models
-### Sebii SME IPO Platform · Persistence Layer
+### ProspectusIQ SME IPO Platform · Persistence Layer
 
 ---
 

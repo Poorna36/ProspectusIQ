@@ -1,5 +1,5 @@
 # Integration Section — Full System Architecture
-### Sebii SME IPO Platform · System Boundaries & End-to-End Flow
+### ProspectusIQ SME IPO Platform · System Boundaries & End-to-End Flow
 
 ---
 
@@ -9,7 +9,7 @@ To ensure maximum development speed and stability during the live pitch, the arc
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                            CLIENT LAYER (sebii/frontend/)                    │
+│                            CLIENT LAYER (prospectusiq/frontend/)             │
 │                                                                              │
 │   ┌─────────────────────────┐       ┌──────────────────────────────────┐     │
 │   │  Interface A            │       │  Interface B                     │     │
@@ -20,7 +20,7 @@ To ensure maximum development speed and stability during the live pitch, the arc
                  │  [Short Polling for async updates] │
                  ▼                                    ▼
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                          MONOLITHIC BACKEND (sebii/backend/)                 │
+│                          MONOLITHIC BACKEND (prospectusiq/backend/)          │
 │                                                                              │
 │   ┌────────────────────────────────────────────────────────────────────┐     │
 │   │  Node.js + Fastify API                                             │     │
@@ -36,7 +36,7 @@ To ensure maximum development speed and stability during the live pitch, the arc
                  │  (Fired asynchronously)                  │
                  ▼                                          ▼
 ┌─────────────────────────────────┐      ┌─────────────────────────────────┐
-│           DATA LAYER            │      │   INTELLIGENCE (sebii/ml/)      │
+│           DATA LAYER            │      │  INTELLIGENCE (prospectusiq/ml/)│
 │                                 │      │                                 │
 │  ┌─────────────────────┐        │      │   ai-engine (Python FastAPI)    │
 │  │  SQLite (Local DB)  │        │      │   • Dual-Model Inference        │

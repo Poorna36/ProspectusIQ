@@ -1,5 +1,5 @@
 # Backend Section — API Specification
-### Sebii SME IPO Platform · Route Contracts & Response Schemas
+### ProspectusIQ SME IPO Platform · Route Contracts & Response Schemas
 
 ---
 

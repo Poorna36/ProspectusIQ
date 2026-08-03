@@ -1,5 +1,5 @@
 # Security Section — Authentication, Authorization & Hardening
-### Sebii SME IPO Platform · Security Boundary
+### ProspectusIQ SME IPO Platform · Security Boundary
 
 ---
 
