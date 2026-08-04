@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# SEBI Raw PDF Files (Re-downloadable via 01_prepare_sebi_security_dataset.py)
+data/sebi_official_raw/*.pdf
+ml/data/sebi_official_raw/*.pdf
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

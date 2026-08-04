@@ -1,0 +1,24 @@
+{
+  "model_name": "ProspectusIQ SEBI SQLi Detector (Char TF-IDF + LogisticRegression)",
+  "model_file": "sqli_detector_sebi.pkl",
+  "evaluation_dataset": "test.csv",
+  "total_test_samples": 572,
+  "input_normalization_applied": true,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0
+  },
+  "confusion_matrix": {
+    "true_negatives": 272,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "true_positives": 300
+  },
+  "training_data_distribution": {
+    "total_training_samples": 2664,
+    "safe_sebi_queries_class_0": 1264,
+    "malicious_sqli_payloads_class_1": 1400
+  }
+}
