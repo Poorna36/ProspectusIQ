@@ -115,13 +115,13 @@ Authenticate and issue access + refresh tokens.
 ```typescript
 {
   accessToken:  string;   // JWT, RS256, 15-minute expiry
-  refreshToken: string;   // Opaque, 7-day expiry, stored in Redis
+  refreshToken: string;   // Opaque, 7-day expiry, stored in SQLite sessions table
   expiresIn:    900;      // Seconds
   user: {
     userId:           string;
     email:            string;
     role:             'PROMOTER' | 'INTERMEDIARY' | 'ADMIN';
-    intermediaryRole: 'MERCHANT_BANKER' | 'LEGAL' | 'AUDITOR' | null;
+    intermediaryRole: 'MERCHANT_BANKER' | 'LEGAL_COUNSEL' | 'AUDITOR' | null;
   };
 }
 ```
@@ -343,7 +343,7 @@ Submit or update structured input data for a section. Dispatches Stage 1 pre-AI 
 {
   sectionKey: SectionKey;
   status:     'DRAFT_IN_PROGRESS';
-  jobId:      string;              // BullMQ job ID for status tracking
+  jobId:      string;              // Async Job ID for status tracking
 }
 ```
 
@@ -367,8 +367,22 @@ Submit intermediary's redlined or edited text for a section.
 { sectionKey: SectionKey; editedAt: string; }
 ```
 
----
 
+### `GET /filings/:filingId/sections/:sectionKey/status`
+Lightweight polling endpoint for async AI draft status. Called by the frontend every 3 seconds.
+
+**Authorization:** `Bearer <accessToken>` · Filing-scoped
+
+**Response `200`:**
+```typescript
+{
+  sectionKey: SectionKey;
+  status:     SectionStatus;   // e.g. 'AI_DRAFTING' | 'AI_DRAFT_READY'
+  jobId:      string | null;   // Active background job ID if AI_DRAFTING
+}
+```
+
+---
 ## 6. Group D — Flags
 
 ### `GET /filings/:filingId/flags`
@@ -447,7 +461,7 @@ Submit a role-based certification sign-off.
 **Request Body:**
 ```typescript
 {
-  certifierRole:   'MERCHANT_BANKER' | 'LEGAL' | 'AUDITOR';
+  certifierRole:   'MERCHANT_BANKER' | 'LEGAL_COUNSEL' | 'AUDITOR';
   declaration:     string;     // Attestation text (displayed in UI before submission)
   signatureHash:   string;     // SHA-256 of declaration text + UTC timestamp
 }
@@ -632,6 +646,7 @@ Array<{
   actorType:  'USER' | 'SYSTEM' | 'AI_ENGINE' | 'RULES_ENGINE';
   actorName:  string | null;
   payload:    Record<string, unknown>;
+  hash:       string; // SHA-256 hash string
   timestamp:  string;
 }>
 ```
@@ -676,7 +691,7 @@ Assign an intermediary to a filing.
 ```typescript
 {
   userId:       string;
-  assignedRole: 'MERCHANT_BANKER' | 'LEGAL' | 'AUDITOR';
+  assignedRole: 'MERCHANT_BANKER' | 'LEGAL_COUNSEL' | 'AUDITOR';
 }
 ```
 
@@ -754,3 +769,297 @@ Trigger AI drafting for a section. Called by `ai-draft.worker.ts`.
   modelVersion:         string;
 }
 ```
+
+
+---
+
+## 14. Group K — Enterprise Workflow, Pairing & Certification Endpoints
+
+### `POST /auth/pair`
+Validate Engagement Code and pair Promoter Portal (Interface A) with Intermediary Workbench (Interface B).
+
+**Authorization:** `Bearer <accessToken>` · Role: `PROMOTER`
+
+**Request Body:**
+```typescript
+{
+  engagementCode: string; // e.g. "MB-SEBI-2026-X942"
+  cin:            string; // Corporate Identity Number
+  companyName:    string;
+}
+```
+
+**Response `201`:**
+```typescript
+{
+  paired: true;
+  filingId: string;
+  assignedIntermediaries: Array<{
+    name: string;
+    role: 'MERCHANT_BANKER' | 'LEGAL_COUNSEL' | 'AUDITOR';
+  }>;
+}
+```
+
+---
+
+### `POST /filings/:filingId/phases/:phaseId/e-sign-lock`
+Intermediary digital signature verification and Seal Bronze (`#A9762F`) phase lock.
+
+**Authorization:** `Bearer <accessToken>` · Role: `INTERMEDIARY`
+
+**Request Body:**
+```typescript
+{
+  signatoryName:       string;
+  sebiRegistrationNo:  string; // e.g. "INM000012345"
+  eSignToken:          string; // Simulated Class 3 DSC / eSign token
+  declarationAccepted: boolean;
+}
+```
+
+**Response `200`:**
+```typescript
+{
+  status: 'CERTIFIED_LOCKED';
+  lockedAt: string; // ISO 8601
+  bronzeSealApplied: true;
+  digitalSignatureHash: string; // SHA-256
+}
+```
+
+---
+
+### `POST /filings/:filingId/phases/:phaseId/request-unlock`
+Request temporary amendment unlock on a certified/locked phase.
+
+**Authorization:** `Bearer <accessToken>` · Roles: `PROMOTER` | `INTERMEDIARY`
+
+**Request Body:**
+```typescript
+{
+  amendmentRationale: string;
+}
+```
+
+**Response `200`:**
+```typescript
+{
+  requestId: string;
+  status: 'UNLOCK_REQUESTED';
+  notifiedRoles: string[];
+}
+```
+
+---
+
+### `GET /filings/:filingId/audit-log`
+Retrieve the unified cross-portal audit log with cryptographic SHA-256 event hashes.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**Query Params:** `category?: 'AI' | 'RULES' | 'PROMOTER' | 'INTERMEDIARY'`
+
+**Response `200`:**
+```typescript
+Array<{
+  logId:     string;
+  timestamp: string;
+  actor:     string;
+  action:    string;
+  hash:      string; // SHA-256 hash string
+}>
+```
+
+---
+
+### `GET /filings/:filingId/messages` & `POST /filings/:filingId/messages`
+Persistent direct messaging drawer between Promoter and Intermediary team.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**POST Request Body:**
+```typescript
+{
+  text:           string;
+  attachmentUrl?: string;
+}
+```
+
+**Response `200`:**
+```typescript
+{
+  messageId: string;
+  senderRole: string;
+  text: string;
+  timestamp: string;
+}
+```
+
+---
+
+### `GET /filings/:filingId/readiness-index`
+Retrieve the SEBI Observation Letter Pre-Submission Readiness Scorecard.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**Response `200`:**
+```typescript
+{
+  grade: 'Grade A-' | 'Grade A' | 'Grade B';
+  queryRiskLevel: 'LOW' | 'MEDIUM' | 'HIGH';
+  scores: {
+    hardRules: number;
+    numericReconciliation: number;
+    riskSpecificity: number;
+    unquantifiedClaims: number;
+  };
+}
+```
+
+---
+
+### `GET /filings/:filingId/variables/reconcile`
+Retrieve the Single-Source-of-Truth Variable Reconciler Matrix.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**Response `200`:**
+```typescript
+Array<{
+  variableKey: string;
+  value: unknown;
+  reconciled: boolean;
+  footprint: Array<{
+    chapter: string;
+    description: string;
+  }>;
+}>
+```
+
+---
+
+### `GET /filings/:filingId/checklist/schedule-vi`
+Retrieve the legally accurate SEBI ICDR 2018 Schedule VI Compliance Checklist.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**Response `200`:**
+```typescript
+Array<{
+  clauseReference: string;
+  requirement: string;
+  location: string;
+  status: 'VERIFIED' | 'PENDING';
+}>
+```
+
+---
+
+### `POST /ml/copilot` (ai-engine service)
+Context-aware conversational assistant endpoint.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**Request Body:**
+```typescript
+{
+  userMessage:   string;
+  sectionKey:    string;
+  filingContext: {
+    inputVariables: Record<string, unknown>;
+    currentDraft?: string;
+    openFlags?: unknown[];
+    role: 'PROMOTER' | 'INTERMEDIARY';
+  };
+}
+```
+
+**Response `200`:**
+```typescript
+{
+  reply: string;
+  sources: Array<{
+    chunkId: string;
+    pdfSource: string;
+    section: string;
+    relevanceScore: number;
+    excerpt: string;
+  }>;
+  suggestedActions: string[];
+}
+```
+
+### `GET /notifications`
+Retrieve real-time notifications for the authenticated user.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**Query Params:** `isRead?: boolean`
+
+**Response `200`:**
+```typescript
+Array<{
+  id:        string;
+  type:      'FLAG_RAISED' | 'CLARIFICATION_REQUESTED' | 'SECTION_LOCKED' | 'PHASE_SUBMITTED' | 'SLA_WARNING';
+  message:   string;
+  isRead:    boolean;
+  timestamp: string;
+}>
+```
+
+---
+
+### `PATCH /notifications/:id/read`
+Mark a notification as read.
+
+**Authorization:** `Bearer <accessToken>` · Roles: All
+
+**Response `200`:**
+```typescript
+{ id: string; isRead: true; }
+```
+
+---
+
+### `POST /filings/:filingId/documents/scan-mock`
+Demo OCR document scan — accepts any image/PDF upload and returns pre-scripted extracted variables.
+Simulates a full OCR + NER pipeline for demo purposes. No real OCR processing occurs.
+
+**Authorization:** `Bearer <accessToken>` · Role: `PROMOTER`
+
+**Request:** `multipart/form-data` — `{ file: File; sectionKey: SectionKey }`
+
+**Response `200`:**
+```typescript
+{
+  extractedVariables: Record<string, unknown>;  // Pre-scripted vendor/financial data
+  confidence: number;                           // Simulated OCR confidence (0.0-1.0)
+  processingSteps: string[];                    // e.g. ["Image Ingestion", "OCR Parsing", "NER Tagging", "Rules Validation"]
+}
+```
+
+---
+
+### `GET /filings/:filingId/export/pdf`
+Generate and download the complete DRHP PDF package with dynamic watermarking.
+
+**Authorization:** `Bearer <accessToken>` · Filing-scoped
+
+**Query Params:** `sections?: SectionKey[]` (optional — defaults to all sections)
+
+**Response `200`:** `Content-Type: application/pdf`
+Binary PDF stream. Watermark: `DRAFT — SUBJECT TO INTERMEDIARY CERTIFICATION` (unlocked phases)
+or `CONFIDENTIAL — CERTIFIED & LOCKED BY INTERMEDIARY` (locked phases).
+
+---
+
+### `GET /filings/:filingId/export/checklist-pdf`
+Export the SEBI ICDR 2018 Schedule VI Compliance Checklist as a standalone PDF.
+
+**Authorization:** `Bearer <accessToken>` · Filing-scoped
+
+**Response `200`:** `Content-Type: application/pdf`
+Binary PDF stream: `SEBI_ICDR_Schedule_VI_Compliance_Checklist.pdf`
+
+---

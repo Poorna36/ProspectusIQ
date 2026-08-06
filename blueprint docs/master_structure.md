@@ -73,3 +73,20 @@ With the removal of Redis and Docker, booting the project is now incredibly fast
 2. **Start ML Engine:** `cd ml/ai-engine && uvicorn src.api.server:app --reload`
 3. **Start Backend Monolith:** `cd backend && npm run dev`
 4. **Start Frontend:** `cd frontend/portal && npm run dev`
+
+
+---
+
+## 3. Master Specifications Cross-Reference
+
+- **Product & Workflow Master Spec:** [`PRODUCT_WORKFLOW_SPEC.md`](./PRODUCT_WORKFLOW_SPEC.md)
+  - Complete 18-chapter DRHP wizard hierarchy (4 Master Phases).
+  - Realistic 21-Day (3-Week) Timeline Engine & SLA buffer tracking.
+  - First-Time Setup Handshake (`Engagement Code: MB-SEBI-2026-X942`).
+  - Dual Communication Layer (Inline threads + Persistent Messaging Drawer).
+  - Multi-tier Flagging (`CRITICAL_BLOCKING`, `COMPLIANCE_WARNING`, `SUGGESTION_TIP`).
+  - Phase Certification & Seal Bronze (`#A9762F`) lock animation.
+  - 5 Core Interactive Visualizations (Promoter Group Network, Objects Waterfall, Financial Trends, Peer Multiples, Risk Donut).
+  - Demo Mock OCR Document Scanner.
+  - PDF Export, Print Styles & Dynamic Watermarking.
+  - Digital e-Sign Modal & SEBI ICDR 2018 Schedule VI Compliance Checklist.

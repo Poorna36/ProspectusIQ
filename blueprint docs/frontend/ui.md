@@ -28,7 +28,7 @@ The specification below outlines the **mandatory User Journeys and Page Flows** 
 - **Goal:** The promoter inputs raw data, which triggers the AI pipeline.
 - **Requirement:** A form representing the required variables for a section.
 - **Action:** When the user clicks "Save & Continue", the frontend calls `PUT /filings/:id/sections/:key/inputs`.
-- **UX State:** The UI *must* enter a locked "Loading/Checking" state while the backend runs Stage 1 validation. Once the WebSocket returns a success event, the UI unlocks or navigates to the AI Draft Preview.
+- **UX State:** The UI *must* enter a locked "Loading/Checking" state while the backend runs Stage 1 validation. Once the polling loop detects `status: AI_DRAFT_READY`, the UI unlocks or navigates to the AI Draft Preview.
 
 ### 2.4 AI Draft Preview Flow
 - **Goal:** The promoter reviews what the AI wrote, but cannot edit it directly.
@@ -69,4 +69,21 @@ Flags are the core communication mechanism between the Rules Engine, the AI Veri
 - **Review Flags:** Warnings that require a human to look at them.
 
 ### 4.2 Real-time UI Updates
-Instead of forcing the user to hit "Refresh" while waiting for the AI to draft a section, the frontend must listen to the WebSocket and automatically fetch the latest text when the backend says the draft is ready.
+Instead of forcing the user to hit "Refresh" while waiting for the AI to draft a section, the frontend must implement **HTTP Short Polling** (every 3 seconds on `GET /filings/:id/sections/:key/status`) and automatically fetch the latest section data once the backend returns `status: AI_DRAFT_READY`.
+
+
+---
+
+## 5. Enterprise UX Specifications (Master Alignment)
+
+- **18-Chapter Wizard Layout:** Structured across 4 Master Phases (Foundational, Business/Financials, Legal/Risk, Offer Structure).
+- **Seal Bronze Stamp (`#A9762F`):** Visual certification seal stamp animating upon phase lock.
+- **5 Interactive Visualization Panels:**
+  1. *Promoter Group Network Graph:* Interactive node-link map checking MCA21 undisclosed related parties.
+  2. *Objects of Issue Waterfall Reconciler:* Fund flow breakdown chart.
+  3. *Financial Performance Trend:* 3-year Restated Revenue, EBITDA, PAT, and EPS chart.
+  4. *Peer Group Valuation Comparison:* P/E, EV/EBITDA, NAV bar chart.
+  5. *Compliance & Risk Distribution:* Open flag severity donut chart.
+- **OCR Scanner Modal (Demo Mock):** Animated 2.5-second processing sequence (`Image Ingestion` ➔ `OCR Parsing` ➔ `NER Tagging` ➔ `Rules Validation`) auto-populating structured form inputs.
+- **PDF Export & Watermark Engine:** Dynamic watermarking (`DRAFT — SUBJECT TO INTERMEDIARY CERTIFICATION` vs `CONFIDENTIAL — CERTIFIED & LOCKED BY INTERMEDIARY`) with clean print styles (`@media print`).
+- **Direct Messaging Drawer & Notification Hub:** Slide-out communication and alert panels accessible on both portals.

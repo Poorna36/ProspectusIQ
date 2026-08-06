@@ -25,7 +25,7 @@ Accounts are tied to legal identities.
 
 ### 1.3 Token Architecture
 - **Access Token:** JWT (HS256 or RS256 using `.env` secrets). 15-minute expiry. Contains `userId`, `role`, and an array of `assignedFilingIds`.
-- **Refresh Token:** Opaque, random, high-entropy string (UUID v4 + CSPRNG bytes). 7-day expiry. Stored in Redis.
+- **Refresh Token:** Opaque, random, high-entropy string (UUID v4 + CSPRNG bytes). 7-day expiry. Stored in SQLite sessions table.
 - **Token Rotation:** On every refresh request, the old refresh token is invalidated and a new one is issued. If a compromised, previously-used refresh token is presented, all active sessions for that user are immediately revoked.
 
 ---
@@ -48,7 +48,7 @@ Permissions are enforced via middleware in `core-api`, ensuring no user can mani
 
 **Intermediary Sub-Roles (Separation of Duties):**
 - `MERCHANT_BANKER` controls Business Overview, Objects of Issue.
-- `LEGAL` controls Risk Factors, Legal Proceedings.
+- `LEGAL_COUNSEL` controls Risk Factors, Legal Proceedings.
 - `AUDITOR` controls Financial Statements.
 *An Auditor cannot certify the Legal sections.*
 
@@ -88,3 +88,16 @@ Referrer-Policy: strict-origin-when-cross-origin
 Even as a prototype, the codebase demonstrates compliance with:
 - **SEBI CSCRF:** Zero Trust, MFA, audit logs satisfy the Cybersecurity framework.
 - **DPDP Act 2023:** KYC data retained strictly on consent; logs isolate PII via UUID references.
+
+
+---
+
+## 5. Engagement Code Pairing & Digital Signature Protocols
+
+### 5.1 First-Time Setup Handshake (`Engagement Code`)
+- **Issuance:** Lead Merchant Banker creates an engagement token (e.g. `MB-SEBI-2026-X942`) bound to the assigned Intermediary Team.
+- **Verification:** When the SME Promoter registers on Interface A, providing the `Engagement Code` binds their account directly to the intermediary workspace via a secure RBAC link.
+
+### 5.2 Digital Signature & Seal Bronze Lock
+- **e-Sign Verification:** Interface B requires explicit digital signoff (SEBI Intermediary Registration No e.g. `INM000012345`) before a section is sealed.
+- **Immutable Lock:** Applies the **Seal Bronze Stamp (`#A9762F`)** and writes a SHA-256 signed record to the `audit_events` table.

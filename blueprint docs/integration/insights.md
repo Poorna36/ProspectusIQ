@@ -37,9 +37,9 @@ Unstructured `console.log("Something happened")` is prohibited in the services. 
 
 ## 3. Tracing Across Services
 
-Because the AI drafting pipeline bounces from `core-api` → Redis Queue → Worker → `ai-engine`, you must be able to trace a request in the terminal.
+Because the AI drafting pipeline bounces from `core-api` → Node.js Async Promise → `ai-engine`, you must be able to trace a request in the terminal.
 
-- Ensure `X-Request-ID` is passed from the Gateway, to the Core API, into the BullMQ job payload, and finally into the Python AI Engine.
+- Ensure `X-Request-ID` is passed from the Gateway, to the Core API, into the Async Job payload, and finally into the Python AI Engine.
 - To debug a stalled job, simply search your terminal (or combined docker-compose logs) for the `requestId`.
 
 ---

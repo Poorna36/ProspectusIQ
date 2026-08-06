@@ -44,7 +44,7 @@ interface User {
   email:                string;     // UNIQUE, NOT NULL
   password_hash:        string;     // NOT NULL, bcrypt
   role:                 'PROMOTER' | 'INTERMEDIARY' | 'ADMIN';  // Stored as TEXT
-  intermediary_role:    'MERCHANT_BANKER' | 'LEGAL' | 'AUDITOR' | null;
+  intermediary_role:    'MERCHANT_BANKER' | 'LEGAL_COUNSEL' | 'AUDITOR' | null;
   full_name:            string;     // NOT NULL
   company_name:         string | null;
   kyc_status:           'PENDING' | 'VERIFIED' | 'REJECTED';
@@ -164,7 +164,7 @@ interface Certification {
   certification_id:     string;     // PK, UUID v4
   filing_id:            string;     // FK → filings.filing_id, NOT NULL
   certified_by:         string;     // FK → users.user_id, NOT NULL
-  certifier_role:       'MERCHANT_BANKER' | 'LEGAL' | 'AUDITOR';
+  certifier_role:       'MERCHANT_BANKER' | 'LEGAL_COUNSEL' | 'AUDITOR';
   declaration_text:     string;
   signature_hash:       string;
   certified_at:         number;
@@ -182,6 +182,7 @@ interface AuditEvent {
   actor_id:             string | null;
   actor_type:           'USER' | 'SYSTEM' | 'AI_ENGINE' | 'RULES_ENGINE';
   payload:              Record<string, unknown>;  // Stored as TEXT (JSON stringified)
+  hash:                 string;    // SHA-256 of (actor + action + timestamp) — immutable integrity check
   timestamp:            number;
 }
 ```
@@ -208,3 +209,54 @@ All extracted data points submitted by the frontend and parsed by the rules engi
 - `variable_revenue_FY26` (number, INR)
 - `variable_pat_FY26` (number, INR)
 - `variable_customer_concentration_top5_pct` (number, 0-100)
+
+
+---
+
+## 5. Enterprise Entities (Workflow, Messaging & Auditing)
+
+### `messages` Table
+```typescript
+export const messages = sqliteTable('messages', {
+  id:            text('id').primaryKey(),
+  filingId:      text('filing_id').notNull().references(() => filings.id),
+  senderUserId:  text('sender_user_id').notNull(),
+  senderRole:    text('sender_role').notNull(), // 'PROMOTER' | 'MERCHANT_BANKER' | 'LEGAL_COUNSEL'
+  text:          text('text').notNull(),
+  attachmentUrl: text('attachment_url'),
+  timestamp:     text('timestamp').notNull(),
+});
+```
+
+### `notifications` Table
+```typescript
+export const notifications = sqliteTable('notifications', {
+  id:        text('id').primaryKey(),
+  userId:    text('user_id').notNull(),
+  type:      text('type').notNull(), // 'FLAG_RAISED' | 'CLARIFICATION_REQUESTED' | 'SECTION_LOCKED'
+  message:   text('message').notNull(),
+  isRead:    integer('is_read', { mode: 'boolean' }).default(false),
+  timestamp: text('timestamp').notNull(),
+});
+```
+
+---
+
+## 6. Phase Grouping Enum (No Separate DB Table Required)
+
+Phases are logical groupings of sections managed at the backend service layer (not a separate DB entity).
+
+```typescript
+const PHASE_GROUPS = {
+  PHASE_1: ['CH_01', 'CH_02', 'CH_03', 'CH_04', 'CH_05'],  // Foundational & Promoter Disclosures
+  PHASE_2: ['CH_06', 'CH_07', 'CH_08', 'CH_09', 'CH_10'],  // Business & Financial Performance
+  PHASE_3: ['CH_11', 'CH_12', 'CH_13', 'CH_14', 'CH_15'],  // Legal, Risk & Regulatory Compliance
+  PHASE_4: ['CH_16', 'CH_17', 'CH_18'],                     // Offer Structure & Certification
+} as const;
+
+type PhaseId = keyof typeof PHASE_GROUPS;
+```
+
+When `POST /filings/:filingId/phases/:phaseId/e-sign-lock` is called:
+- `:phaseId` must be one of `PHASE_1 | PHASE_2 | PHASE_3 | PHASE_4`
+- Backend resolves the phase to its constituent `SectionKey[]` and verifies all sections in that group are `CERTIFIED_LOCKED` before the phase-level lock is applied.
