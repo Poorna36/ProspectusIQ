@@ -1,0 +1,180 @@
+{
+  "entries": [
+    {
+      "type": "exact",
+      "value": "git fetch --all --prune --quiet && echo FETCH_OK || echo FETCH_FAILED",
+      "addedAt": "2026-02-07T10:03:03.909Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "npm install --ignore-scripts",
+      "addedAt": "2026-02-07T10:21:13.104Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "npm run coverage:ci-check-coverage",
+      "addedAt": "2026-02-07T15:10:08.412Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "node --test test/web-api.test.js",
+      "addedAt": "2026-02-07T15:24:46.872Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "gpg --list-secret-keys --keyid-format=long || true && git config --get user.signingkey && git config --get commit.gpgsign",
+      "addedAt": "2026-02-11T04:42:44.716Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && npm run test:typescript",
+      "addedAt": "2026-02-19T20:22:59.298Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && git checkout -- types/route.d.ts",
+      "addedAt": "2026-02-19T20:23:45.912Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && git status --short && git diff -- types/route.d.ts test/types/route.test-d.ts | sed -n '1,220p'",
+      "addedAt": "2026-02-19T20:25:10.175Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && git checkout -- types/route.d.ts test/types/route.test-d.ts && npm run test:typescript",
+      "addedAt": "2026-02-19T20:25:56.421Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && npm run lint:eslint -- types/route.d.ts test/types/route.test-d.ts",
+      "addedAt": "2026-02-19T20:27:12.547Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && git checkout -b fix/6513-route-hook-meta-return",
+      "addedAt": "2026-02-19T20:27:31.569Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && git add types/route.d.ts test/types/route.test-d.ts && git commit -m \"fix(types): allow async route hooks in shorthand options\"",
+      "addedAt": "2026-02-19T20:27:35.261Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && npx tsc /tmp/ctx-test2.ts --noEmit --strict",
+      "addedAt": "2026-02-19T20:44:45.451Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && npx tsd --files test/types/hooks.test-d.ts",
+      "addedAt": "2026-02-19T20:47:16.815Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && npx tsd --files test/types/route.test-d.ts",
+      "addedAt": "2026-02-19T20:47:37.607Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && npx tsd",
+      "addedAt": "2026-02-19T20:48:17.812Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "cd /home/matteo/repositories/fastify && npm run lint:eslint -- types/route.d.ts && npx tsd --files test/types/hooks.test-d.ts && npx tsd --files test/types/route.test-d.ts",
+      "addedAt": "2026-02-19T20:51:05.173Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "which gh && gh --version && gh auth status",
+      "addedAt": "2026-02-20T07:03:43.023Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "gh api repos/fastify/fastify/rulesets",
+      "addedAt": "2026-02-22T22:29:22.020Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "node --test test/fastify-instance.test.js",
+      "addedAt": "2026-02-23T07:23:34.147Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "exact",
+      "value": "nl -ba scripts/validate-ecosystem-links.js | sed -n '1,220p'",
+      "addedAt": "2026-02-23T07:23:55.927Z",
+      "note": "Always accept",
+      "source": "user"
+    },
+    {
+      "type": "pattern",
+      "value": "^npx\\s+eslint\\s+[\\w./~-]+\\s+[\\w./~-]+\\s+[\\w./~-]+\\s+[\\w./~-]+$",
+      "addedAt": "2026-03-09T12:41:11.065Z",
+      "note": "Always accept generic",
+      "source": "ai"
+    },
+    {
+      "type": "pattern",
+      "value": "^node\\s+--test\\s+[\\w./~-]+\\s+[\\w./~-]+$",
+      "addedAt": "2026-03-09T12:41:58.425Z",
+      "note": "Always accept generic",
+      "source": "ai"
+    },
+    {
+      "type": "pattern",
+      "value": "^npm\\s+run\\s+test:typescript$",
+      "addedAt": "2026-03-09T12:42:48.283Z",
+      "note": "Always accept generic",
+      "source": "ai"
+    },
+    {
+      "type": "exact",
+      "value": "gh search code \"request.host org:fastify\" --limit 20 --json repository,path,url",
+      "addedAt": "2026-03-09T21:03:22.953Z",
+      "note": "Always accept exact",
+      "source": "user"
+    }
+  ],
+  "version": 2
+}
