@@ -1,0 +1,14 @@
+# Python Virtual Environment
+ml/venv/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Large raw and intermediate datasets
+ml/data/sebi_official_raw/
+ml/data/sebi_cleaned/
+ml/data/security_cleaned/
+
+# User local environment configs
+.ipynb_checkpoints/

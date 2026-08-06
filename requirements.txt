@@ -1,0 +1,9 @@
+pandas
+scikit-learn
+joblib
+requests
+pymupdf
+pdfplumber
+faiss-cpu
+sentence-transformers
+beautifulsoup4

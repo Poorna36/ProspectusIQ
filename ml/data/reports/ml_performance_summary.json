@@ -1,0 +1,8 @@
+{
+  "benchmark_dataset": "SecLists OWASP SQLi Payloads",
+  "total_attack_vectors": 320,
+  "true_positives": 320,
+  "false_negatives": 0,
+  "attack_recall": 1.0,
+  "accuracy_against_attacks": 1.0
+}

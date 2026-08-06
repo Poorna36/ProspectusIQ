@@ -1,0 +1,17 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/ml/venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "pyright.venvPath": "${workspaceFolder}/ml",
+  "pyright.venv": "venv",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/ml/venv/lib/python3.14/site-packages",
+    "${workspaceFolder}/ml/venv/lib/python3.13/site-packages",
+    "${workspaceFolder}/ml/venv/lib/python3.12/site-packages",
+    "${workspaceFolder}/ml/venv/lib/python3.11/site-packages"
+  ],
+  "python.analysis.exclude": [
+    "**/~/.gemini/**",
+    "**/brain/**",
+    "**/scratch/**"
+  ]
+}
