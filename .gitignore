@@ -1,0 +1,38 @@
+# ==============================================================================
+# ProspectusIQ .gitignore
+# ==============================================================================
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+.env
+
+# --- Python Cache & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Temp & Logs ---
+*.log
+*.tmp
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+node_modules/

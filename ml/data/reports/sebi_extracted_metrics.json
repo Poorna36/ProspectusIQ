@@ -1,0 +1,1347 @@
+{
+  "project": "ProspectusIQ Financial Extraction Engine",
+  "total_documents_analyzed": 66,
+  "supported_file_types": [
+    ".pdf",
+    ".docx",
+    ".xlsx",
+    ".xls",
+    ".csv",
+    ".txt",
+    ".json"
+  ],
+  "companies": [
+    {
+      "source_file": "Advanced_Sys-Tek_Limited_-_DRHPAdvanced_Sys-Tek_Limited-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "Advanced Sys-Tek Limited - Advanced Sys-Tek Limited- Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "5,014.00 \n5,236.00 \n5,250.00"
+      },
+      "top_extracted_risk_factors": [
+        "# Sowilo Capital Advisors LLP has signed the due diligence certificate but will be involved only in marketing of the Offer in \ncompliance with the Regulation 21C of the SEBI Merchant Bankers Regulatio...",
+        "a press release, and also by indicating the change on the website of the BRLMs and at the terminals of the other \nmembers of the Syndicate and by intimation to the Designated Intermediaries and the Sp...",
+        "# Sowilo Capital Advisors LLP has signed the due diligence certificate but will be involved only in marketing of the Offer in \ncompliance with the Regulation 21C of the SEBI Merchant Bankers Regulatio...",
+        "TABLE OF CONTENTS \nSECTION I: GENERAL ..................................................................................................................................... 1 \nDEFINITIONS AND ABBREVIAT..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR Code to view the DRHP \nand Draft Abridged Prospectus) \n \n \nDRAFT RED HERRING PROSPECTUS \nJuly 23, 2026 \n Draft Red Herring Prospectus will be updated upon fili",
+        "# Sowilo Capital Advisors LLP has signed the due diligence certificate but will be involved only in marketing of the Offer in \ncompliance with the Regulation 21C of the SEBI Mercha",
+        "DRAFT RED HERRING PROSPECTUS \nJuly 23, 2026 \n Draft Red Herring Prospectus will be updated upon filing with the RoC) \nPlease read Section 32 of the Companies Act, 2013 \n100% Book B"
+      ]
+    },
+    {
+      "source_file": "Apex_Logistics_SME_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Apex Logistics SME",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Apex Logistics SME Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/2150\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 70% of to..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Apex Logistics SME Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/2150\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers "
+      ]
+    },
+    {
+      "source_file": "Behari_Lal_Engineering_Limited_-_Corrigendum_to_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Behari Lal Engineering Limited - Corrigendum to",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "OUR PROMOTERS: PARKASH CHAND GARG, RAJESH GARG, DINESH GARG, LOVLISH GARG AND BHUVNESH GARG\nC O N C E P T\nOur Company was originally incorporated as ‘Behari Lal Ispat Private Limited’, at Jalandhar, P..."
+      ],
+      "financial_summary_snippets": [
+        "OUR PROMOTERS: PARKASH CHAND GARG, RAJESH GARG, DINESH GARG, LOVLISH GARG AND BHUVNESH GARG\nC O N C E P T\nOur Company was originally incorporated as ‘Behari Lal Ispat Private Limit"
+      ]
+    },
+    {
+      "source_file": "BlueSkies_Software_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "BlueSkies Software",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: BlueSkies Software Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/6186\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 61% of to..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: BlueSkies Software Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/6186\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers "
+      ]
+    },
+    {
+      "source_file": "BSE_SME_Regulations.pdf",
+      "file_type": "PDF",
+      "company_name": "BSE SME Regulations",
+      "doc_type": "Regulations",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Operational risk arising from macroeconomic fluctuation and sector regulatory updates.",
+        "Working capital requirements and client concentration risk in core business segments.",
+        "Litigation and compliance risk regarding SEBI ICDR regulations."
+      ],
+      "financial_summary_snippets": []
+    },
+    {
+      "source_file": "CloudCare_Health_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "CloudCare Health",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: CloudCare Health Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/3334\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 49% of tota..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: CloudCare Health Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/3334\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers co"
+      ]
+    },
+    {
+      "source_file": "CULT.FIT_LIMITED_-_DRHPCULT.FIT_LIMITED_-_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "CULT.FIT LIMITED - CULT.FIT LIMITED - Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ",",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Accel India V (Mauritius) Limited \nInvestor \nSelling \nShareholder \nUp to 6,532,434 Equity Shares of face value of...",
+        "_\u0014\u0003HDFK\n DJJUHJDWLQJ\u0003XS\u0003WR\u0003\n_\n>\u0001@\n million \n44.80 \n# As certified by Manian & Rao, Chartered Accountants (FRN No. 001983S), by way of their certificate dated July 6, 2026. \n* Calculated on the basis ...",
+        "Email: cultfit.ipo@kfintech.com \nBID/ OFFER PERIOD \nANCHOR INVESTOR BID/ OFFER PERIOD\n(1) \n>\u0001@\n(1) \nBID/OFFER OPENS ON \n>\u0001@\n(1) \nBID/OFFER CLOSES ON\n(2)(3) \n>\u0001@\n(2)(3) \n(1) Our Company, in consulta...",
+        "’5$)7\u00035(’\u0003+(55,1*\u000335263(&786\n \n’DWHG\u001d\u0003\n-XO\\\u0003\u0019\u000f\u0003\u0015\u0013\u0015\u0019\n \n3OHDVH\u0003UHDG\u00036HFWLRQ\u0003\u0016\u0015\u0003RI\u0003WKH\u0003&R\n \n\u000b7KLV\u0003’UDIW\u00035HG\u0003+HUULQJ\u00033URVSHFWXV\u0003ZLOO\u0003EH\u0003XS\n \n100% Book Built Offer \n \n \n \nCULT .FIT LIMITED \n\u000b)RUPHUO\\\u0003&XOW\u0011..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus ) \nDRAFT RED HERRING PROSPECTUS\n \nDated: July 6, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This D",
+        "_\f#* \nMacRitchie Investments Pte. Ltd. \nInvestor \nSelling \nShareholder \nUp to 24,664,113 Equity Shares of face value \nRI\u0003\n_\u0014\u0003HDFK\n DJJUHJDWLQJ\u0003XS\u0003WR>\u0001@\n million \n59.85 \nFitness Fi",
+        "_\u0014\u0003HDFK\n DJJUHJDWLQJ\u0003XS\u0003WR\u0003\n_\n>\u0001@\n million \n44.80 \nTwenty Nine Capital Partners Limited \nPartnership (acting at all times through \nits general partner, Twenty Nine Capital \nPartne"
+      ]
+    },
+    {
+      "source_file": "CyberShield_Systems_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "CyberShield Systems",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: CyberShield Systems Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/4666\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 71% of t..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: CyberShield Systems Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/4666\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers"
+      ]
+    },
+    {
+      "source_file": "Encube_Ethicals_Limited_-_DRHPEncube_Ethicals_Limited-_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "Encube Ethicals Limited - Encube Ethicals Limited- Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": ", 2,400"
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan the QR code to view this Draft Red Herring Prospectus and the Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated: August 1, 2026 \nPlease read Section 32 of the Companies Act,...",
+        "LISTING \nThe Equity Shares that will be offered through the Red Herring Prospectus are proposed to be listed on the Stock Exchanges being BSE Limited \n(“BSE”) and National Stock Exchange of India Limi...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: August 1, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n100% Book Built Of...",
+        "TABLE OF CONTENTS \nSECTION I: GENERAL ........................................................................................................................................................... 1 \nDEF..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan the QR code to view this Draft Red Herring Prospectus and the Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated: August 1, 2026 \nPlease read Section 32 o",
+        "LISTING \nThe Equity Shares that will be offered through the Red Herring Prospectus are proposed to be listed on the Stock Exchanges being BSE Limited \n(“BSE”) and National Stock Ex",
+        "DRAFT RED HERRING PROSPECTUS \nDated: August 1, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC)"
+      ]
+    },
+    {
+      "source_file": "Fusion_CX_Limited_-_Addendum_to_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Fusion CX Limited - Addendum to",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.53",
+        "net_revenue": "131.45 \n703.78 \n1,431.77",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "17 \nPast allotment/ secondary transactions \nWeighted average cost \nof acquisition \n(in ₹) \nFloor Price \n(i.e., ₹ [●])# \nCap Price \n(i.e., ₹ [●])# \nWeighted average cost of acquisition for last 18 \nmon..."
+      ],
+      "financial_summary_snippets": [
+        "THIS IS A PUBLIC ANNOUNCEMENT FOR INFORMATION PURPOSES ONLY. THIS IS NOT A PROSPECTUS ANNOUNCEMENT AND DOES NOT CONSTITUTE AN \nINVITATION OR OFFER TO ACQUIRE, PURCHASE OR SUBSCRIBE",
+        "Website: www.nuvama.com \nInvestor grievance e-mail: \ncustomerservice.mb@nuvama.com \nContact person: Lokesh Shah / Soumavo \nSarkar \nSEBI \nregistration \nnumber: \nINM000013004 \nE-Mail",
+        "1 \nDEFINITIONS AND ABBREVIATIONS \nThe following definitions shall be amended and updated in the section “Definitions and Abbreviations” beginning on page 1 \nof the DRHP. \nCompany r"
+      ]
+    },
+    {
+      "source_file": "GNI_INFRASTRUCTURE_LIMITED_-_Draft_Abridged_prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "GNI INFRASTRUCTURE LIMITED - Draft Abridged prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor, Gut No. 107, Plot N...",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consultation with the BRLM...",
+        "6 \n \n \nDetails of KPIs as at/ for the nine-month period ended December 31, 2025, and for the financial years ended March 31, 2025, \nMarch 31, 2024 and March 31, 2023 \n \nParticular \nUnit \nAs at end for...",
+        "8 \n \n10. \nOur contingent liabilities amounted to ₹2,288.60 million, ₹2,100.62 million, ₹1,195.69 million and ₹1,142.81 million \nas of December 31, 2025, Fiscal 2025, Fiscal 2024 and Fiscal 2023, respe..."
+      ],
+      "financial_summary_snippets": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor,",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consul",
+        "1 \n \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF \nTHE DRAFT RED HERRING PROSPECTUS \n \n \n \n \n \nPlease scan this QR code to \nview the Draft Red H"
+      ]
+    },
+    {
+      "source_file": "GNI_INFRASTRUCTURE_LIMITED_-_DRHPGNI_INFRASTRUCTURE_LIMITED_-_Draft_Abridged_prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "GNI INFRASTRUCTURE LIMITED - GNI INFRASTRUCTURE LIMITED - Draft Abridged prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "."
+      },
+      "top_extracted_risk_factors": [
+        "our Company, in consultation with the BRLMs) in accordance with the SEBI ICDR Regulations and on the basis of the assessment \nof market demand for the Equity Shares by way of the Book Building Process...",
+        "(1)Our Company may, in consultation with the BRLMs, consider participation by Anchor Investors in accordance with the SEBI ICDR Regulations. The Anchor Investor Bidding Date shall \nbe 1 (one) Working ...",
+        "[THIS PAGE HAS BEEN INTENTIONALLY LEFT BLANK]...",
+        "TABLE OF CONTENTS \n \nSECTION I – GENERAL .................................................................................................................................... 1 \nDEFINITIONS AND ABBREVI..."
+      ],
+      "financial_summary_snippets": [
+        "(Please use this QR Code to view this Draft Red Herring \nProspectus and Draft Abridge Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated: June 30, 2026 \nPlease read Section 32 of t",
+        "our Company, in consultation with the BRLMs) in accordance with the SEBI ICDR Regulations and on the basis of the assessment \nof market demand for the Equity Shares by way of the B",
+        "DRAFT RED HERRING PROSPECTUS \nDated: June 30, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon \nfiling with the RoC)"
+      ]
+    },
+    {
+      "source_file": "GNI_Infrastructure_Limited_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "GNI Infrastructure Limited",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor, Gut No. 107, Plot N...",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consultation with the BRLM...",
+        "6 \n \n \nDetails of KPIs as at/ for the nine-month period ended December 31, 2025, and for the financial years ended March 31, 2025, \nMarch 31, 2024 and March 31, 2023 \n \nParticular \nUnit \nAs at end for...",
+        "8 \n \n10. \nOur contingent liabilities amounted to ₹2,288.60 million, ₹2,100.62 million, ₹1,195.69 million and ₹1,142.81 million \nas of December 31, 2025, Fiscal 2025, Fiscal 2024 and Fiscal 2023, respe..."
+      ],
+      "financial_summary_snippets": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor,",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consul",
+        "1 \n \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF \nTHE DRAFT RED HERRING PROSPECTUS \n \n \n \n \n \nPlease scan this QR code to \nview the Draft Red H"
+      ]
+    },
+    {
+      "source_file": "GreenEnergy_Infra_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "GreenEnergy Infra",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: GreenEnergy Infra Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/7590\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 60% of tot..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: GreenEnergy Infra Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/7590\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers c"
+      ]
+    },
+    {
+      "source_file": "Hero_Motors_Limited_-_Corrigendum_to_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Hero Motors Limited - Corrigendum to",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Operational risk arising from macroeconomic fluctuation and sector regulatory updates.",
+        "Working capital requirements and client concentration risk in core business segments.",
+        "Litigation and compliance risk regarding SEBI ICDR regulations."
+      ],
+      "financial_summary_snippets": []
+    },
+    {
+      "source_file": "Horizon_Agro_Tech_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Horizon Agro Tech",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Horizon Agro Tech Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/5648\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 68% of tot..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Horizon Agro Tech Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/5648\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers c"
+      ]
+    },
+    {
+      "source_file": "Indian_Gas_Exchange_Limited_-_Draft_Abridged_prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "Indian Gas Exchange Limited - Draft Abridged prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Floor, Unit No. \n1.14(...",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements specifically made or ...",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \nRed \nHerring \nProspe...",
+        "7 \n \n11. Trade Volume represents the aggregate of quantity of each trade completed on exchange platform till the \nlast day of relevant Fiscal Year. \n12. Total number of trades represents the aggregate..."
+      ],
+      "financial_summary_snippets": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Fl",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements s",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \n"
+      ]
+    },
+    {
+      "source_file": "Indian_Gas_Exchange_Limited_-_DRHPIndian_Gas_Exchange_Limited_-_Draft_Abridged_prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "Indian Gas Exchange Limited - Indian Gas Exchange Limited - Draft Abridged prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ",",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus and Draft Abridged Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated July 14, 2026 \nPlease read Section 32 of the Companies Act, 201...",
+        "Herring Prospectus solely in relation to itself as the Promoter Selling Shareholder and the Offered Shares and assumes responsibility that such \nstatements are true and correct in all material respect...",
+        "DRAFT RED HERRING PROSPECTUS \nDated July 14, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n100% Book Built Offe...",
+        "(i) \nTABLE OF CONTENTS \nSECTION I: GENERAL .......................................................................................................................................................... 1 ..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus and Draft Abridged Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated July 14, 2026 \nPlease read Section 32 of th",
+        "Herring Prospectus solely in relation to itself as the Promoter Selling Shareholder and the Offered Shares and assumes responsibility that such \nstatements are true and correct in ",
+        "DRAFT RED HERRING PROSPECTUS \nDated July 14, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n"
+      ]
+    },
+    {
+      "source_file": "Indian_Gas_Exchange_Limited_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Indian Gas Exchange Limited",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Floor, Unit No. \n1.14(...",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements specifically made or ...",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \nRed \nHerring \nProspe...",
+        "7 \n \n11. Trade Volume represents the aggregate of quantity of each trade completed on exchange platform till the \nlast day of relevant Fiscal Year. \n12. Total number of trades represents the aggregate..."
+      ],
+      "financial_summary_snippets": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Fl",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements s",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \n"
+      ]
+    },
+    {
+      "source_file": "INNOTERRA_LIMITED_-_DRHPINNOTERRA_LIMITED_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "INNOTERRA LIMITED - INNOTERRA LIMITED - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus and Draft Abridged Prospectus)\nDRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n...",
+        "Shareholder, for any other statement in this Draft Red Herring Prospectus, including, inter alia, any of the statements made by or relating to \nour Company or our Company’s business or any other Selli...",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \n(Please read Section 32 of the Companies Act, 2013) \n(This Draft Red Herring Prospectus will \nbe updated upon filing with the RoC) \n \n \nINNOTERRA LIM...",
+        "TABLE OF CONTENTS \nSECTION I – GENERAL ......................................................................................................................................................... 1 \nDEFI..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus and Draft Abridged Prospectus)\nDRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \nPlease read Section 32 of the C",
+        "Shareholder, for any other statement in this Draft Red Herring Prospectus, including, inter alia, any of the statements made by or relating to \nour Company or our Company’s busines",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \n(Please read Section 32 of the Companies Act, 2013) \n(This Draft Red Herring Prospectus will \nbe updated upon filing with the RoC"
+      ]
+    },
+    {
+      "source_file": "MASTER_CHAINS_N_JEWELS_LIMITED_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "4"
+      },
+      "top_extracted_risk_factors": [
+        "MASTER CHAINS N JEWELS LIMITED \n(Formerly Master Chains N Jewels Private Limited and Master Chain Private Limited) \n \nCORPORATE IDENTITY NUMBER: U36911MH1997PLC107966 \n \nREGISTERED OFFICE \nCONTACT PER...",
+        "Draft Red Herring Prospectus as a whole or any of such information or the expression of any such opinions or intentions misleading in \nany material respect. \n \nFurther, the Promoter Selling Shareholde...",
+        "7 \n \nFor explanations of the above KPIs, see “Definitions and Abbreviations” on page 1 of the Draft Red Herring \nProspectus. \n \n8. Risk Factors \n \nSet forth below are the top 10 internal risk factors ..."
+      ],
+      "financial_summary_snippets": [
+        "MASTER CHAINS N JEWELS LIMITED \n(Formerly Master Chains N Jewels Private Limited and Master Chain Private Limited) \n \nCORPORATE IDENTITY NUMBER: U36911MH1997PLC107966 \n \nREGISTERED",
+        "Draft Red Herring Prospectus as a whole or any of such information or the expression of any such opinions or intentions misleading in \nany material respect. \n \nFurther, the Promote",
+        "1 \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR code to \nview the Draft Red"
+      ]
+    },
+    {
+      "source_file": "MASTER_CHAINS_N_JEWELS_LIMITED_-_DRHPMASTER_CHAINS_N_JEWELS_LIMITED_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "MASTER CHAINS N JEWELS LIMITED - MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ",",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR Code to view the \nDRHP and Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \n Dated: July 25, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herr...",
+        "in any material respect. Further, the Promoter Selling Shareholder, accepts the responsibility for and confirms only the statements made \nor confirmed in this Draft Red Herring Prospectus to the exten...",
+        "(Please scan this QR Code to view the \nDRHP and Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \n Dated: July 25, 2026\nPlease read Section 32 of the Companies Act, 2013\n(This Draft Red Herrin...",
+        "(This page has been intentionally left blank)..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR Code to view the \nDRHP and Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \n Dated: July 25, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n",
+        "in any material respect. Further, the Promoter Selling Shareholder, accepts the responsibility for and confirms only the statements made \nor confirmed in this Draft Red Herring Pro",
+        "(Please scan this QR Code to view the \nDRHP and Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \n Dated: July 25, 2026\nPlease read Section 32 of the Companies Act, 2013\n(T"
+      ]
+    },
+    {
+      "source_file": "Master_Chains_N_Jewels_Limited_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Master Chains N Jewels Limited",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "4"
+      },
+      "top_extracted_risk_factors": [
+        "MASTER CHAINS N JEWELS LIMITED \n(Formerly Master Chains N Jewels Private Limited and Master Chain Private Limited) \n \nCORPORATE IDENTITY NUMBER: U36911MH1997PLC107966 \n \nREGISTERED OFFICE \nCONTACT PER...",
+        "Draft Red Herring Prospectus as a whole or any of such information or the expression of any such opinions or intentions misleading in \nany material respect. \n \nFurther, the Promoter Selling Shareholde...",
+        "7 \n \nFor explanations of the above KPIs, see “Definitions and Abbreviations” on page 1 of the Draft Red Herring \nProspectus. \n \n8. Risk Factors \n \nSet forth below are the top 10 internal risk factors ..."
+      ],
+      "financial_summary_snippets": [
+        "MASTER CHAINS N JEWELS LIMITED \n(Formerly Master Chains N Jewels Private Limited and Master Chain Private Limited) \n \nCORPORATE IDENTITY NUMBER: U36911MH1997PLC107966 \n \nREGISTERED",
+        "Draft Red Herring Prospectus as a whole or any of such information or the expression of any such opinions or intentions misleading in \nany material respect. \n \nFurther, the Promote",
+        "1 \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR code to \nview the Draft Red"
+      ]
+    },
+    {
+      "source_file": "NextGen_EV_Mobility_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "NextGen EV Mobility",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: NextGen EV Mobility Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/1677\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 67% of t..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: NextGen EV Mobility Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/1677\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers"
+      ]
+    },
+    {
+      "source_file": "NSE_Emerge_SME_Guidelines.pdf",
+      "file_type": "PDF",
+      "company_name": "NSE Emerge SME Guidelines",
+      "doc_type": "Regulations",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Operational risk arising from macroeconomic fluctuation and sector regulatory updates.",
+        "Working capital requirements and client concentration risk in core business segments.",
+        "Litigation and compliance risk regarding SEBI ICDR regulations."
+      ],
+      "financial_summary_snippets": []
+    },
+    {
+      "source_file": "Omni_Retailers_SME_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Omni Retailers SME",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Omni Retailers SME Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/5043\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 53% of to..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Omni Retailers SME Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/5043\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers "
+      ]
+    },
+    {
+      "source_file": "Pragyawan_Technologies_Limited_-_DRHPPragyawan_Technologies_Limited_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "Pragyawan Technologies Limited - Pragyawan Technologies Limited - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Operational risk arising from macroeconomic fluctuation and sector regulatory updates.",
+        "Working capital requirements and client concentration risk in core business segments.",
+        "Litigation and compliance risk regarding SEBI ICDR regulations."
+      ],
+      "financial_summary_snippets": []
+    },
+    {
+      "source_file": "Quantum_Microelectronics_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Quantum Microelectronics",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Quantum Microelectronics Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/5705\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 70%..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Quantum Microelectronics Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/5705\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 cust"
+      ]
+    },
+    {
+      "source_file": "RATNADEEP_RETAIL_LIMITED_-_DRHPRatnadeep_Retail_Limited_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "RATNADEEP RETAIL LIMITED - Ratnadeep Retail Limited - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ",",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR code to view this Draft Red Herring Prospectus and the Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated: July 1, 2026 \nPlease read Section 32 of the Companies Act, ...",
+        "NAME OF THE BRLM AND LOGO \nCONTACT PERSON \nEMAIL AND TELEPHONE \nMotilal Oswal Investment Advisors \nLimited \nRonak Shah/ Ritu Sharma E-mail: ratnadeepretail.ipo@motilaloswal.com \nTel: +91 22 7193 4380 ...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 1, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing the RHP with the RoC) \n100% Book Bu...",
+        "TABLE OF CONTENTS \nSECTION I: GENERAL ........................................................................................................................................................... 1 \nDEF..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view this Draft Red Herring Prospectus and the Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated: July 1, 2026 \nPlease read Section 32 of",
+        "NAME OF THE BRLM AND LOGO \nCONTACT PERSON \nEMAIL AND TELEPHONE \nMotilal Oswal Investment Advisors \nLimited \nRonak Shah/ Ritu Sharma E-mail: ratnadeepretail.ipo@motilaloswal.com \nTe",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 1, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing the RHP with th"
+      ]
+    },
+    {
+      "source_file": "SEBI_ICDR_Regulations_2018.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI ICDR Regulations 2018",
+      "doc_type": "Regulations",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n#As certified by R P S V & Co., Chartered Accountants, by way of their c...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \nDate in accordance with the SEBI ICDR Regulations. \n^ Our Company, in co...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n \nVERITAS FINANCE LIMITED \n \nOur Company was incorporated as ‘Veritas Fi...",
+        "(i) \nTABLE OF CONTENTS \nSECTION I: GENERAL ........................................................................................................................................................... 1..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus and Draft Abridged Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of t",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n#As certified by R P S V & Co., Chartered Accountant",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \nDate in accordance with the SEBI ICDR Regulations. \n"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Advit_Jewels.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Advit Jewels",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Return on Net Worth (11) (%) \n30.41% \n43.64% \n44.84% \n57.47% \nPursuant to the certificate dated May 15, 2026, received from our statutory and peer review auditor, M/S Keyur Shah & Associates, \nCharter...",
+        "3. Our business is significantly dependent on Jaipur City as our entire manufacturing operations are based \nthereon along with 14.95%, 52.79%, 47.63% and 75.03% of our total raw material purchases for..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR Code to view the RHP, \n Abridged Prospectus and Price Band Advertisement) \n ADVIT JEWELS LIMITED \n Abridged Prospectus \n \n 1. \nSummary of the Primary Business ",
+        "2. \nRepayment/pre-\npayment, in full or in \npart, \nof \ncertain \noutstanding borrowings \navailed by our Company \nfrom \nscheduled \ncommercial bank \n6,500.00 \nWe propose to utilise a p",
+        "13. Devraj Soni \n40,000 \n0.12% \n[●] \n[●] \n[●] \n[●] \n14. Diksha Agarwal \n40,000 \n0.12% \n[●] \n[●] \n[●] \n[●] \n Other Public Shareholders \n15. Others \n12,04,000 \n3.55% \n[●] \n[●] \n[●] \n"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Ardee_Industries.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Ardee Industries",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "846.81 \n332.71 \n89.54"
+      },
+      "top_extracted_risk_factors": [
+        "ARDEE INDUSTRIES LIMITED \nCORPORATE IDENTITY NUMBER: U24294DL1993PLC405804 \n \nREGISTERED OFFICE \nCONTACT \nPERSON \nTELEPHONE AND E-\nMAIL \nWEBSITE \nKhasra No. 340, 1st Floor and 3rd Floor, Village \nSult...",
+        "must rely on their own examination of our Company and the Offer, including the risks involved. The Equity Shares \noffered in the Offer have not been recommended or approved by the Securities and Excha...",
+        "11 \n8. \nRisk Factors \n \nInvestors are advised to read the risk factors carefully before taking an investment decision in the Offer. Details \nof our top 10 risk factors are set forth below: \n \n1. \nWe s..."
+      ],
+      "financial_summary_snippets": [
+        "ARDEE INDUSTRIES LIMITED \nCORPORATE IDENTITY NUMBER: U24294DL1993PLC405804 \n \nREGISTERED OFFICE \nCONTACT \nPERSON \nTELEPHONE AND E-\nMAIL \nWEBSITE \nKhasra No. 340, 1st Floor and 3rd ",
+        "must rely on their own examination of our Company and the Offer, including the risks involved. The Equity Shares \noffered in the Offer have not been recommended or approved by the ",
+        "3 \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE RED HERRING PROSPECTUS \n \n \n(Please \nscan \nthis QR code to \nview the Red \nHerring \nProspect"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Caliber_Mining.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Caliber Mining",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR Code to view the Red \nHerring \nProspectus \nand \nthe \nAbridged \nProspectus) \n \n \n \nCALIBER MINING AND LOGISTICS LIMITED \n(FORMERLY KNOWN AS CALIBER MERCANTILE \nPRIVATE LIMITED) \nCO...",
+        "Our Company, having made all reasonable inquiries, accepts responsibility for and confirms that this Red Herring Prospectus contains all \ninformation with regard to our Company and the Offer, which is...",
+        "Return on Average Equity \nNon-GAAP \n27.78% \n33.51% \n38.63% \nReturn on Capital Employed \nNon-GAAP \n16.60% \n20.68% \n16.81% \nReturn on Average Assets (%) \nNon-GAAP \n9.07% \n9.81% \n9.55% \nCurrent Ratio \nNo..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR Code to view the Red \nHerring \nProspectus \nand \nthe \nAbridged \nProspectus) \n \n \n \nCALIBER MINING AND LOGISTICS LIMITED \n(FORMERLY KNOWN AS CALIBER MERCANTILE \n",
+        "Our Company, having made all reasonable inquiries, accepts responsibility for and confirms that this Red Herring Prospectus contains all \ninformation with regard to our Company and",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING \nSALIENT FEATURES OF THE RED HERRING PROSPECTUS \n \n \nPlease scan this QR \ncode to view the Red \nHerring Prospectus \nand"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_CSM_Technologies.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter CSM Technologies",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n1 \n \n \n \n \nCSM TECHNOLOGIES LIMITED \nCORPORATE IDENTITY NUMBER: U62090OR1998PLC005380 \nR...",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n2 \n \nInspection” on page 494. \nBOOK RUNNING LEAD MANAGER \nNAME AND LOGO OF BRLM \nCONTACT...",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n10 \n \n9. Return on Equity (RoE): Return on equity is calculated by dividing PAT for the ...",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n11 \n \ncomplete our projects within contractual time may affect our future business prosp..."
+      ],
+      "financial_summary_snippets": [
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n1 \n \n \n \n \nCSM TECHNOLOGIES LIMITED \nCORPORATE IDENTITY NUMBER: U620",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n3 \n \n \nABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES ",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n4 \n \nThe table below sets forth our revenue contribution and such re"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Dhoot_Transmission.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Dhoot Transmission",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "1 \n \nDHOOT TRANSMISSION LIMITED \nCorporate Identity Number: U31300PN1998PLC131629 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT \nPERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \nGut No 312, \nNanekarwadi, Chak...",
+        "2 \nOur Company, having made all reasonable inquiries, accepts responsibility for and confirms that this Red Herring Prospectus contains all \ninformation with regard to our Company and the Offer, which...",
+        "7 \nParticulars \nAs at and for the \nFinancial Year ended \nMarch 31, 2026 \nAs at and for the \nFinancial Year ended \nMarch 31, 2025 \nAs at and for the \nFinancial Year ended \nMarch 31, 2024 \nCash flow /(u...",
+        "8 \n1. We derived a significant portion of our revenue from operations (₹29,626.97 million, ₹23,049.09 million and \n₹18,052.79 million, i.e. 65.47%, 66.91% and 64.53%, in Fiscal 2026, Fiscal 2025 and F..."
+      ],
+      "financial_summary_snippets": [
+        "1 \n \nDHOOT TRANSMISSION LIMITED \nCorporate Identity Number: U31300PN1998PLC131629 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT \nPERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \nGut No 312",
+        "2 \nOur Company, having made all reasonable inquiries, accepts responsibility for and confirms that this Red Herring Prospectus contains all \ninformation with regard to our Company ",
+        "3 \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF \nTHE RED HERRING PROSPECTUS \n \n \n \nPlease scan this QR code to \nview the Red Herring \nProspectus"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Indo_MIM.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Indo MIM",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "INDO-MIM LIMITED 3\nINDO-MIM LIMITED\nCORPORATE IDENTITY NUMBER: U28110KA1996PLC137499\nREGISTERED AND CORPORATE OFFICE\nCONTACT PERSON\nEMAIL AND TELEPHONE\nWEBSITE\n45(P), KIADB Industrial Area, Hoskote, \n...",
+        "4 INDO-MIM LIMITED\nCOMPANY’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY\nOur Company, having made all reasonable inquiries, accepts responsibility for and confirms that the Red Herring Prospectu...",
+        "8 INDO-MIM LIMITED\nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE RED HERRING PROSPECTUS\nif any such transfers occur prior to the date of the Prospectus, it will ...",
+        "INDO-MIM LIMITED 9\nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE RED HERRING PROSPECTUS\n5. \nWe import a significant portion of our raw materials constituting 60...."
+      ],
+      "financial_summary_snippets": [
+        "INDO-MIM LIMITED 3\nINDO-MIM LIMITED\nCORPORATE IDENTITY NUMBER: U28110KA1996PLC137499\nREGISTERED AND CORPORATE OFFICE\nCONTACT PERSON\nEMAIL AND TELEPHONE\nWEBSITE\n45(P), KIADB Industr",
+        "4 INDO-MIM LIMITED\nCOMPANY’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY\nOur Company, having made all reasonable inquiries, accepts responsibility for and confirms that the R",
+        "INDO-MIM LIMITED 5\nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE RED HERRING PROSPECTUS\n(Please scan this QR Code to view \nthe Red Herring Pr"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Juniper_Green.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Juniper Green",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "JUNIPER GREEN ENERGY LIMITED \nCORPORATE IDENTITY NUMBER: U40100DL2011PLC228318 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \n E-MAIL AND \nTELEPHONE \nWEBSITE \n1103A & 1103B, 11th \nFloor, \nHem...",
+        "ICICI Securities Limited \nKishan Rastogi/ Nikita \nChirania \nTel: +91 22 6807 7100 \nE-mail: \njunipergreen@icicisecurities.c\nom \n \nHSBC Securities and Capital \nMarkets (India) Private \nLimited \nHarsh Th...",
+        "(9) Average Plant Availability for the assets held as on last date of the financial year refers to the weighted average of plant availability of the installed \ncapacity in the portfolio as on given fi...",
+        "• \nA portion of the Net Proceeds is proposed to be utilized for repayment or prepayment of certain loan facilities availed \nby our Company from The Hongkong and Shanghai Banking Corporation Limited wh..."
+      ],
+      "financial_summary_snippets": [
+        "JUNIPER GREEN ENERGY LIMITED \nCORPORATE IDENTITY NUMBER: U40100DL2011PLC228318 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \n E-MAIL AND \nTELEPHONE \nWEBSITE \n1103A & 1103",
+        "ICICI Securities Limited \nKishan Rastogi/ Nikita \nChirania \nTel: +91 22 6807 7100 \nE-mail: \njunipergreen@icicisecurities.c\nom \n \nHSBC Securities and Capital \nMarkets (India) Privat",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES \nOF THE RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR code to \nview the Red Herring \nProspectus "
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Knack_Packaging.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Knack Packaging",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "KNACK PACKAGING LIMITED 3\n \n(Please scan this QR Code to view \nthe Red Herring Prospectus and the \nAbridged Prospectus)\nKNACK PACKAGING LIMITED \nCORPORATE IDENTITY NUMBER: U25200GJ2013PLC073847\nABRIDG...",
+        "4 KNACK PACKAGING LIMITED\nCOMPANY’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY\nOur Company, having made all reasonable inquiries, accepts responsibility for and confirms that the Red Herring Pr...",
+        "KNACK PACKAGING LIMITED 5\nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE RED HERRING PROSPECTUS\n \n(Please scan this QR Code to view \nthe Red Herring Prospectus an...",
+        "8 KNACK PACKAGING LIMITED\nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE RED HERRING PROSPECTUS\n4. \nNet asset value (NAV) per equity share (₹): Net worth as resta..."
+      ],
+      "financial_summary_snippets": [
+        "KNACK PACKAGING LIMITED 3\n \n(Please scan this QR Code to view \nthe Red Herring Prospectus and the \nAbridged Prospectus)\nKNACK PACKAGING LIMITED \nCORPORATE IDENTITY NUMBER: U25200GJ",
+        "4 KNACK PACKAGING LIMITED\nCOMPANY’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY\nOur Company, having made all reasonable inquiries, accepts responsibility for and confirms tha",
+        "KNACK PACKAGING LIMITED 5\nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE RED HERRING PROSPECTUS\n \n(Please scan this QR Code to view \nthe Red H"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Kusumgar.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Kusumgar",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "KUSUMGAR LIMITED \n(Formerly known as Kusumgar Private Limited) \nCORPORATE IDENTITY NUMBER: U65990MH1990PLC056871 \n \nREGISTERED AND \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n10...",
+        "the Securities and Exchange Board of India (“SEBI”), nor does SEBI guarantee the accuracy or adequacy of the contents of the \nRed Herring Prospectus. Specific attention of the Bidders is invited to th...",
+        "S. No \nKPIs \nUnit \nAs at and for the Fiscals ended \nMarch 31, 2026 \nMarch 31, 2025 \nMarch 31, 2024 \n14. \nRevenue \nfrom \nOutdoor \nand \nLifestyle Fabrics(14) \n₹ million \n1,253.15 \n569.00 \n291.65 \nNotes:...",
+        "5. We incurred negative cash flows from operating activities in Fiscal 2025 and may continue to incur negative \ncash flows in the future. Continued negative cash flows from operating activities could ..."
+      ],
+      "financial_summary_snippets": [
+        "KUSUMGAR LIMITED \n(Formerly known as Kusumgar Private Limited) \nCORPORATE IDENTITY NUMBER: U65990MH1990PLC056871 \n \nREGISTERED AND \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTE",
+        "the Securities and Exchange Board of India (“SEBI”), nor does SEBI guarantee the accuracy or adequacy of the contents of the \nRed Herring Prospectus. Specific attention of the Bidd",
+        "b. Industries Served and Typical Customers \nOur customers are primarily other businesses who use our fabrics in their own manufacturing operations. In \nrecent years, we have built "
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Laser_Power.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Laser Power",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR code to view the \nRHP and Abridged Prospectus) \n \n \n \n \n \n \n \n \n \n \n \n \nLASER POWER & INFRA LIMITED \n \n \nCORPORATE IDENTITY NUMBER: U14220WB1988PLC043591 \n \nREGISTERED OFFICE \nCOR...",
+        "3 \n \nc. Segment reporting and revenue contribution \nWe operate two key business segments namely: (i) Manufacturing; and (ii) EPC. The following \ntable sets forth the details of our Revenue from Operat...",
+        "8 \n \nSr. No. Particulars \nUnit \nFiscal 2026 \nFiscal 2025 \nFiscal 2024 \n7. \nPAT(7) \nin ₹ million \n1,515.91 \n1,067.54 \n404.09 \n8. \nPAT Margin(8) \n% \n6.46% \n4.12% \n2.29% \n9. \nRoE (9) \n% \n23.32% \n19.76% \n...",
+        "9 \n \nSr. \nNo. \nRisk category \n(operational, \nfinancial, risk \nrelated to object \nof the offer, etc.) \nDescription of risk \n2. \nBusiness risk \nOur revenue depends on sale of power cables and conductors..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view the \nRHP and Abridged Prospectus) \n \n \n \n \n \n \n \n \n \n \n \n \nLASER POWER & INFRA LIMITED \n \n \nCORPORATE IDENTITY NUMBER: U14220WB1988PLC043591 \n \nRE",
+        "3 \n \nc. Segment reporting and revenue contribution \nWe operate two key business segments namely: (i) Manufacturing; and (ii) EPC. The following \ntable sets forth the details of our",
+        "4 \n \n \n(iii) Robust execution capabilities, with a track record of executing and handling complex EPC \nprojects successfully and strong backward integration capabilities; \n \n(iv) E"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_LEAP_India.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter LEAP India",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "ABRIDGED PROSPECTUS \n100% Book Built Offer \n \n \nLEAP INDIA LIMITED \nCORPORATE IDENTIFICATION NUMBER: U74900MH2013PLC245166 \nREGISTERED AND \nCORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSI...",
+        "undertakings in the Red Herring Prospectus, including without limitation, any of the statements, disclosures or undertakings made or confirmed by or \nin relation to our Company or our Company’s busine...",
+        "7 \n \n3. Container utilization rate denotes the rolling 12 months average of month-end standard container stock deployed at customer \nlocations, benchmarked against the total number of standard pooling...",
+        "8 \n \n2. A majority of our revenue from operations is derived from our pallets (our pallets contributed to 62.17%, 67.90% \nand 72.23% of our revenue from operations in Fiscals 2026, 2025 and 2024, resp..."
+      ],
+      "financial_summary_snippets": [
+        "ABRIDGED PROSPECTUS \n100% Book Built Offer \n \n \nLEAP INDIA LIMITED \nCORPORATE IDENTIFICATION NUMBER: U74900MH2013PLC245166 \nREGISTERED AND \nCORPORATE OFFICE \nCONTACT PERSON \nEMAIL ",
+        "undertakings in the Red Herring Prospectus, including without limitation, any of the statements, disclosures or undertakings made or confirmed by or \nin relation to our Company or ",
+        "1 \n \n \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES \nOF THE RED HERRING PROSPECTUS \n \n \nPlease scan this QR \ncode to view the Red \nHerring Prospect"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Lohia_Corp.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Lohia Corp",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "2 \npage 129 should not be considered to be indicative of the market price of the Equity Shares after the Equity Shares are listed. \nNo assurance can be given regarding an active and/or sustained tradi...",
+        "8 \nFor further details, see “Other Financial Information”, “Restated Financial Information”, and “Summary of Special \nPurpose Combined and Carve-Out Financial Statements of the Transferred Group” on p...",
+        "9 \nSr. \nNo. \nRisk Factors \n2. \nSignificant increases or fluctuations in prices of, or shortages of, or delay or disruption in supply of primary \nraw materials could affect our estimated costs, expendi...",
+        "10 \n% \nDoes not include (a) the JDL Shares vested with Amit Kumar Lohia in the JDL Estate Account (since these were only held by Amit Kumar Lohia \nin his capacity as executor of the JDL Will). (b) 667..."
+      ],
+      "financial_summary_snippets": [
+        "1 \n \nLOHIA CORP LIMITED \n(FORMERLY KNOWN AS KANPUR PACKAGING MACHINES LIMITED) \nCorporate Identity Number: U28261UP2023PLC183476 \nREGISTERED OFFICE \nCORPORATE \nOFFICE \nCONTACT PERS",
+        "2 \npage 129 should not be considered to be indicative of the market price of the Equity Shares after the Equity Shares are listed. \nNo assurance can be given regarding an active an",
+        "3 \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF \nTHE RED HERRING PROSPECTUS \n \n \nPlease scan this QR code \nto view the Red Herring \nProspectus a"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Manipal_Health.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Manipal Health",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "2 \n \nSeventy Second Investment Company \nLLC \nInvestor \nSelling \nShareholder \nUp to 792,494 Equity Shares of \nface \nvalue \nof \n₹2 \neach \naggregating to ₹[●] million \n351.81 \nAmmar Sdn Bhd \nInvestor \nSe...",
+        "12 \n \nKPI \nUnit \nFiscal 2026 \n(Pro Forma \nFinancial \nInformation) \nFiscal 2026 \nRestated \nConsolidated \nFinancial \nInformation) \nFiscal 2025 \n(Pro Forma \nFinancial \nInformation) \nFiscal 2025 \n(Restate...",
+        "13 \n \ncould have an adverse impact on our business, financial condition, results of operations, cash flows and \nprospects. \n8. We are required to obtain, renew and maintain statutory and regulatory pe...",
+        "14 \n \nS. \nNo. \nName \nNumber of \nEquity Shares \nof face value \nof ₹2 each \nheld \nWeighted \naverage cost \nof acquisition \nof Equity \nShares of face \nvalue of ₹2 \neach@* (in ₹) \nNumber of \nEquity Shares ..."
+      ],
+      "financial_summary_snippets": [
+        "1 \n \n \n \nMANIPAL HEALTH ENTERPRISES LIMITED \nCorporate Identity Number: U85110KA2010PLC052540 \nREGISTERED AND \nCORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \nThe ",
+        "2 \n \nSeventy Second Investment Company \nLLC \nInvestor \nSelling \nShareholder \nUp to 792,494 Equity Shares of \nface \nvalue \nof \n₹2 \neach \naggregating to ₹[●] million \n351.81 \nAmmar S",
+        "4 \n \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES \nOF THE RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Red \nHerring Prospe"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_MV_Electrosystems.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter MV Electrosystems",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "3\nMV ELECTROSYSTEMS LIMITED\n \n(Please scan this QR code to view the Red Herring \nProspectus and Abridged Prospectus)\nAbridged Prospectus \n100% Book Built Issue\nMV Electrosystems Limited\nCorporate Iden...",
+        "8\nMV ELECTROSYSTEMS LIMITED\n7. \nSummary of Key Performance Indicators\nA list of our KPIs for the Financial Years ended March 31, 2026, March 31, 2025 and March 31, 2024 is set out below:\n(₹ in million..."
+      ],
+      "financial_summary_snippets": [
+        "3\nMV ELECTROSYSTEMS LIMITED\n \n(Please scan this QR code to view the Red Herring \nProspectus and Abridged Prospectus)\nAbridged Prospectus \n100% Book Built Issue\nMV Electrosystems Li",
+        "4\nMV ELECTROSYSTEMS LIMITED\nIN NATURE OF ABRIDGED PROSPECTUS – MEMORANDUM CONTAINING SALIENT FEATURES OF THE RED HERRING PROSPECTUS\n(Please scan this QR code to view \nthe Red Herri",
+        "5\nMV ELECTROSYSTEMS LIMITED\nNature of customers\nFor the Financial Year ended March 31,\n2026\n2025\n2024\nAmount\n%age * 1\nAmount\n%age * 2\nAmount\n%age * 3\nTop three customers\n408.73\n82."
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Omni.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Omni",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Return on Net Worth (11) (%) \n30.41% \n43.64% \n44.84% \n57.47% \nPursuant to the certificate dated May 15, 2026, received from our statutory and peer review auditor, M/S Keyur Shah & Associates, \nCharter...",
+        "3. Our business is significantly dependent on Jaipur City as our entire manufacturing operations are based \nthereon along with 14.95%, 52.79%, 47.63% and 75.03% of our total raw material purchases for..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR Code to view the RHP, \n Abridged Prospectus and Price Band Advertisement) \n ADVIT JEWELS LIMITED \n Abridged Prospectus \n \n 1. \nSummary of the Primary Business ",
+        "2. \nRepayment/pre-\npayment, in full or in \npart, \nof \ncertain \noutstanding borrowings \navailed by our Company \nfrom \nscheduled \ncommercial bank \n6,500.00 \nWe propose to utilise a p",
+        "13. Devraj Soni \n40,000 \n0.12% \n[●] \n[●] \n[●] \n[●] \n14. Diksha Agarwal \n40,000 \n0.12% \n[●] \n[●] \n[●] \n[●] \n Other Public Shareholders \n15. Others \n12,04,000 \n3.55% \n[●] \n[●] \n[●] \n"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Public_Issue.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Public Issue",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n#As certified by R P S V & Co., Chartered Accountants, by way of their c...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \nDate in accordance with the SEBI ICDR Regulations. \n^ Our Company, in co...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n \nVERITAS FINANCE LIMITED \n \nOur Company was incorporated as ‘Veritas Fi...",
+        "(i) \nTABLE OF CONTENTS \nSECTION I: GENERAL ........................................................................................................................................................... 1..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus and Draft Abridged Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of t",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n#As certified by R P S V & Co., Chartered Accountant",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \nDate in accordance with the SEBI ICDR Regulations. \n"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_SBI_Funds.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter SBI Funds",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "30,673.76 \n25,401.54 \n20,727.85"
+      },
+      "top_extracted_risk_factors": [
+        "THE RED HERRING PROSPECTUS IS NOT AN ADVERTISEMENT UNDER THE SECURITIES AND EXCHANGE BOARD OF INDIA (MUTUAL FUNDS) REGULATIONS, 2026, AS \nAMENDED, THE SECURITIES AND EXCHANGE BOARD OF INDIA (ALTERNATI...",
+        "India (“SEBI”), nor does SEBI guarantee the accuracy or adequacy of the contents of the Red Herring Prospectus. Specific attention of the \nBidders is invited to “Risk Factors” beginning on page 24 of ...",
+        "7 \n \n(corporates, banks, financial institutions (FIs)/ foreign institutional investors (FIIs) / foreign portfolio investors (FPIs)) during the last month \nof the relevant Financial Year. \n10. MF MAAUM...",
+        "8 \n \n4. Strict Regulatory Requirements and Prudential Norms: We are subject to extensive regulation by SEBI and \nother regulatory authorities; SEBI conducts periodic inspections of our operations, and..."
+      ],
+      "financial_summary_snippets": [
+        "THE RED HERRING PROSPECTUS IS NOT AN ADVERTISEMENT UNDER THE SECURITIES AND EXCHANGE BOARD OF INDIA (MUTUAL FUNDS) REGULATIONS, 2026, AS \nAMENDED, THE SECURITIES AND EXCHANGE BOARD",
+        "India (“SEBI”), nor does SEBI guarantee the accuracy or adequacy of the contents of the Red Herring Prospectus. Specific attention of the \nBidders is invited to “Risk Factors” begi",
+        "1 \n \n \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES \nOF THE RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR code \nto view the Red Herring \nPros"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Technocraft_Ventures.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Technocraft Ventures",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "433.15 \n282.04 \n190.54"
+      },
+      "top_extracted_risk_factors": [
+        "TECHNOCRAFT VENTURES LIMITED \nCorporate Identity Number: U70101DL1998PLC096763 \nREGISTERED OFFICE \nCORPORATE OFFICE CONTACT PERSON \nTELEPHONE AND E-MAIL \nWEBSITE \nS 553/54, Ground Floor, School \nBlock...",
+        "For more detailed disclosure on such KPIs, see “Basis for Offer Price- Key Performance Indicators” \nstarting on page 155 of the Red Herring Prospectus. \n \n8. \nRisk Factors \n \nSummary of Top 10 Risk Fa...",
+        "9. Seasonal fluctuations- Our Company's construction operations are subject to seasonal risks, \nparticularly during the monsoon season, which can restrict activities and extreme weather events \nsuch a..."
+      ],
+      "financial_summary_snippets": [
+        "TECHNOCRAFT VENTURES LIMITED \nCorporate Identity Number: U70101DL1998PLC096763 \nREGISTERED OFFICE \nCORPORATE OFFICE CONTACT PERSON \nTELEPHONE AND E-MAIL \nWEBSITE \nS 553/54, Ground ",
+        "c) Segment Reporting Details and their revenue contribution \n \nThe business segment wise bifurcation of revenue for the reporting period March 31, 2026, March 31, \n2025 and March 3",
+        "Particulars \nFor the Financial Year ended \nMarch 31, 2026 \nMarch 31, 2025 \nMarch 31, 2024 \nAmount \n(₹ in \nmillion) \n% of \nRevenue \nfrom \nOperations \nAmount \n(₹ in \nmillion) \n% of \n"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Turtlemint_Fintech.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Turtlemint Fintech",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "(1) \nOur Company, in consultation with the Book Running Lead Managers, may consider participation by Anchor Investors, in accordance with the SEBI ICDR Regulations. \nThe Anchor Investor Bidding Date s...",
+        "(6)\nIncrease/ (Decrease) in revenue from operations period on period/ YoY: Increase/ (Decrease) in Revenue from operations period\non period/ YoY represents the increase/ (decrease) percentage in Reven...",
+        "3. We derived almost all our revenues from commissions, rewards and fees received from Insurer Partners and \nother financial service providers in the nine months period ended December 31, 2025 and Dec...",
+        "S. \nNo. \nName \nDesignation \nBoard of Directors \n1. \nDhirendra Nalin Mahyavanshi* \nChairperson and Managing Director and Chief Executive Officer \n2. \nAnand Rohidas Prabhudesai* \nExecutive Director and ..."
+      ],
+      "financial_summary_snippets": [
+        "TURTLEMINT FINTECH SOLUTIONS LIMITED \n(formerly known as Turtlemint Fintech Solutions Private Limited, prior to which it was known as Fintech Blue Solutions \nPrivate Limited) \n \nCO",
+        "(1) \nOur Company, in consultation with the Book Running Lead Managers, may consider participation by Anchor Investors, in accordance with the SEBI ICDR Regulations. \nThe Anchor Inv",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE RED HERRING PROSPECTUS \nPlease scan this QR \ncode to view the Red \nHerring Prospectus \nand the"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Waterways_Leisure.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Waterways Leisure",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan the QR Code to view \nthe RHP and this Abridged \nProspectus) \n \n \n \nABRIDGED PROSPECTUS \nDated June 17, 2026 \n100% Book Built Issue \n \nWATERWAYS LEISURE TOURISM LIMITED \nCORPORATE IDENTITY...",
+        "The Equity Shares that will be offered through the Red Herring Prospectus are proposed to be listed on the BSE Limited (“BSE”) and \nNational Stock Exchange of India Limited (“NSE”, together with BSE, ...",
+        "KPI \nUnits \nFiscal 2026 \nFiscal 2025 \nFiscal 2024 \n \nFleet Size(xiv) \nNo. \n1 \n1 \n1 \nCabin Capacity(xv) \nNo. \n796 \n796 \n796 \nAverage Ticket Price(xvi) \nINR \nper \npassenger \n10,979.86 \n10,724.26 \n9,243....",
+        "results of operations. \n• \nOur Statutory Auditors have included certain adverse remarks, emphasis of matters and qualifications in their \nauditor’s report. In particular, our Statutory Auditors includ..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan the QR Code to view \nthe RHP and this Abridged \nProspectus) \n \n \n \nABRIDGED PROSPECTUS \nDated June 17, 2026 \n100% Book Built Issue \n \nWATERWAYS LEISURE TOURISM LIMITED",
+        "The Equity Shares that will be offered through the Red Herring Prospectus are proposed to be listed on the BSE Limited (“BSE”) and \nNational Stock Exchange of India Limited (“NSE”,",
+        "IN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF THE \nRED HERRING PROSPECTUS \n \n \n \nPlease scan this QR \ncode to view the RHP \nand \nthis \nAbridged \n"
+      ]
+    },
+    {
+      "source_file": "SEBI_Observation_Letter_Xtranet_Technologies.pdf",
+      "file_type": "PDF",
+      "company_name": "SEBI Observation Letter Xtranet Technologies",
+      "doc_type": "Observation letters",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "4,072.76 \n3,003.47 \n1,094.25"
+      },
+      "top_extracted_risk_factors": [
+        "ABRIDGED PROSPECTUS \n100% Book Built Issue \n \nXTRANET TECHNOLOGIES LIMITED \n(Formerly known as Xtranet Technologies Private Limited) \nCorporate Identity Number: U72200MP2002PLC014956 \nREGISTERED OFFIC...",
+        "The Equity Shares that will be offered through this Red Herring Prospectus are proposed to be listed on the Stock Exchanges, \nbeing the BSE Limited (“BSE”) and the National Stock Exchange of India Lim...",
+        "8 \n \n(15) Average Attrition of Employees measures the rate at which employees leave the organization during a period, \nexpressed as a percentage of the average employee base. \n(16) % Government/PSU Cl..."
+      ],
+      "financial_summary_snippets": [
+        "ABRIDGED PROSPECTUS \n100% Book Built Issue \n \nXTRANET TECHNOLOGIES LIMITED \n(Formerly known as Xtranet Technologies Private Limited) \nCorporate Identity Number: U72200MP2002PLC0149",
+        "The Equity Shares that will be offered through this Red Herring Prospectus are proposed to be listed on the Stock Exchanges, \nbeing the BSE Limited (“BSE”) and the National Stock E",
+        "2 \n \nDefense, Railways, Transportation, Food & beverages, Engineering, Financial Services and Insurance, Telecom \nand Utilities, Healthcare and Agriculture, Automotive, Wholesale a"
+      ]
+    },
+    {
+      "source_file": "SolarPulse_Tech_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "SolarPulse Tech",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: SolarPulse Tech Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/746\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 71% of total ..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: SolarPulse Tech Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/746\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers cont"
+      ]
+    },
+    {
+      "source_file": "STALWART_PEOPLE_SERVICES_INDIA_LIMITED_-_DRHPStalwart_People_Services_India_Limited_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "STALWART PEOPLE SERVICES INDIA LIMITED - Stalwart People Services India Limited - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ",",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR \ncode \nto \nview \nthis \nDRHP and the Draft \nAbridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \nPursuant to Section 32 of the Companies Act, 2013 \n(This Draft ...",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \nPursuant to Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the \nRoC) \n \nSTALWART PEOPLE S...",
+        "BOOK RUNNING LEAD MANAGER \nREGISTRAR TO THE OFFER \n \n \nBajaj Capital Securities Limited \nAddress: Mezzanine Floor, 97 Bajaj House, \nNehru Place, South Delhi, 110019 \nTelephone: 011-67000000 \nE-mail: i...",
+        "TABLE OF CONTENTS \n \nSECTION I – GENERAL ..................................................................................................................................... 1 \nDEFINITIONS AND ABBREV..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR \ncode \nto \nview \nthis \nDRHP and the Draft \nAbridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \nPursuant to Section 32 of the Companies Act",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 29, 2026 \nPursuant to Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the \nRoC) ",
+        "BOOK RUNNING LEAD MANAGER \nREGISTRAR TO THE OFFER \n \n \nBajaj Capital Securities Limited \nAddress: Mezzanine Floor, 97 Bajaj House, \nNehru Place, South Delhi, 110019 \nTelephone: 011"
+      ]
+    },
+    {
+      "source_file": "Starlight_Polymers_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Starlight Polymers",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Starlight Polymers Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/4276\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 51% of to..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Starlight Polymers Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/4276\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers "
+      ]
+    },
+    {
+      "source_file": "Sunrise_Finserve_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Sunrise Finserve",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Sunrise Finserve Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/3378\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 48% of tota..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Sunrise Finserve Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/3378\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers co"
+      ]
+    },
+    {
+      "source_file": "SWARA_BABY_PRODUCTS_LIMITED_-_DRHPSwara_Baby_Products_Limited_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "SWARA BABY PRODUCTS LIMITED - Swara Baby Products Limited - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Operational risk arising from macroeconomic fluctuation and sector regulatory updates.",
+        "Working capital requirements and client concentration risk in core business segments.",
+        "Litigation and compliance risk regarding SEBI ICDR regulations."
+      ],
+      "financial_summary_snippets": []
+    },
+    {
+      "source_file": "TechNova_Solutions_Limited_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "TechNova Solutions Limited",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: TechNova Solutions Limited Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/7164\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 4..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: TechNova Solutions Limited Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/7164\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 cu"
+      ]
+    },
+    {
+      "source_file": "TMC_Transformers_India_Limited_-_DRHPTMC_Transformers_India_Limited_-_Draft_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "TMC Transformers India Limited - TMC Transformers India Limited - Draft Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ",",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR code to view this Draft Red Herring Prospectus and the \nDraft Abridged Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated June 30, 2026 \n(This Draft Red Herring Prospectus will be...",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 30, 2026 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n(Please read Section 32 of the Companies Act, 2013) \n100% Book Built Is...",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 30, 2026 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n(Please read Section 32 of the Companies Act, 2013) \n100% Book Built Is...",
+        "TABLE OF CONTENTS \nSECTION I – GENERAL ......................................................................................................................................................... 1 \nDEFI..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view this Draft Red Herring Prospectus and the \nDraft Abridged Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated June 30, 2026 \n(This Draft Red Herrin",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 30, 2026 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n(Please read Section 32 of the Companies Act, 2013)",
+        "DRAFT RED HERRING PROSPECTUS \nDated June 30, 2026 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n(Please read Section 32 of the Companies Act, 2013)"
+      ]
+    },
+    {
+      "source_file": "Vanguard_BioMed_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Vanguard BioMed",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Vanguard BioMed Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/9389\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 64% of total..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Vanguard BioMed Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/9389\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers con"
+      ]
+    },
+    {
+      "source_file": "Veritas_Finance_Limited_-_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "Veritas Finance Limited - Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Vidya Arulmany \nIndividual Selling Shareholder \nUp to 500,000 Equity Shares of \nface \nvalue \nof \n₹10 \neach \naggregating up to ₹[●] million \n10.00 \n#As certified by R P S V & Co., Chartered Accountants...",
+        "ANCHOR INVESTOR BID/ OFFER PERIOD \n[●](1) \nBID/OFFER OPENS ON \n[●] \nBID/OFFER CLOSES ON \n[●](2)* \n(1) Our Company, in consultation with the BRLMs, may consider participation by Anchor Investors in acc...",
+        "disclosure on such KPIs, see “Basis for Offer Price - Comparison of our KPIs with its Listed Industry Peers” on \npage 130 of the Draft Red Herring Prospectus. \n6. Risk Factors \n \nThe following are the...",
+        "7. Weighted average cost of acquisition as on the date of the Draft Red Herring Prospectus at which the \nspecified securities were acquired by the Selling Shareholders, within one year preceding the d..."
+      ],
+      "financial_summary_snippets": [
+        "VERITAS FINANCE LIMITED [ \nCORPORATE IDENTITY NUMBER: U65923TN2015PLC100328 \nREGISTERED AND CORPORATE \nOFFICE \n \nCONTACT \nPERSON \nEMAIL AND TELEPHONE \n \nWEBSITE \nSKCL Central Squar",
+        "Vidya Arulmany \nIndividual Selling Shareholder \nUp to 500,000 Equity Shares of \nface \nvalue \nof \n₹10 \neach \naggregating up to ₹[●] million \n10.00 \n#As certified by R P S V & Co., C",
+        "ANCHOR INVESTOR BID/ OFFER PERIOD \n[●](1) \nBID/OFFER OPENS ON \n[●] \nBID/OFFER CLOSES ON \n[●](2)* \n(1) Our Company, in consultation with the BRLMs, may consider participation by Anc"
+      ]
+    },
+    {
+      "source_file": "Veritas_Finance_Limited_-_DRHPVeritas_Finance_Limited_-_Abridged_Prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "Veritas Finance Limited - Veritas Finance Limited - Abridged Prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": ","
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n#As certified by R P S V & Co., Chartered Accountants, by way of their c...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \nDate in accordance with the SEBI ICDR Regulations. \n^ Our Company, in co...",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n \nVERITAS FINANCE LIMITED \n \nOur Company was incorporated as ‘Veritas Fi...",
+        "(i) \nTABLE OF CONTENTS \nSECTION I: GENERAL ........................................................................................................................................................... 1..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view the Draft Red Herring Prospectus and Draft Abridged Prospectus) \n \nDRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of t",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \n#As certified by R P S V & Co., Chartered Accountant",
+        "DRAFT RED HERRING PROSPECTUS \nDated: July 29, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n100% Book Built Offer \n \nDate in accordance with the SEBI ICDR Regulations. \n"
+      ]
+    },
+    {
+      "source_file": "Veritas_Finance_Limited_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Veritas Finance Limited",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "Vidya Arulmany \nIndividual Selling Shareholder \nUp to 500,000 Equity Shares of \nface \nvalue \nof \n₹10 \neach \naggregating up to ₹[●] million \n10.00 \n#As certified by R P S V & Co., Chartered Accountants...",
+        "ANCHOR INVESTOR BID/ OFFER PERIOD \n[●](1) \nBID/OFFER OPENS ON \n[●] \nBID/OFFER CLOSES ON \n[●](2)* \n(1) Our Company, in consultation with the BRLMs, may consider participation by Anchor Investors in acc...",
+        "disclosure on such KPIs, see “Basis for Offer Price - Comparison of our KPIs with its Listed Industry Peers” on \npage 130 of the Draft Red Herring Prospectus. \n6. Risk Factors \n \nThe following are the...",
+        "7. Weighted average cost of acquisition as on the date of the Draft Red Herring Prospectus at which the \nspecified securities were acquired by the Selling Shareholders, within one year preceding the d..."
+      ],
+      "financial_summary_snippets": [
+        "VERITAS FINANCE LIMITED [ \nCORPORATE IDENTITY NUMBER: U65923TN2015PLC100328 \nREGISTERED AND CORPORATE \nOFFICE \n \nCONTACT \nPERSON \nEMAIL AND TELEPHONE \n \nWEBSITE \nSKCL Central Squar",
+        "Vidya Arulmany \nIndividual Selling Shareholder \nUp to 500,000 Equity Shares of \nface \nvalue \nof \n₹10 \neach \naggregating up to ₹[●] million \n10.00 \n#As certified by R P S V & Co., C",
+        "ANCHOR INVESTOR BID/ OFFER PERIOD \n[●](1) \nBID/OFFER OPENS ON \n[●] \nBID/OFFER CLOSES ON \n[●](2)* \n(1) Our Company, in consultation with the BRLMs, may consider participation by Anc"
+      ]
+    },
+    {
+      "source_file": "YOGIJI_DIGI_LIMITED_-_Draft_Abridged_prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "YOGIJI DIGI LIMITED - Draft Abridged prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "YOGIJI DIGI LIMITED (FORMERLY KNOWN AS YOGIJI DIGI PRIVATE LIMITED) \nCORPORATE IDENTITY NUMBER: U74899HR1993PLC032121 \nREGISTERED AND CORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nP...",
+        "investors is invited to “Risk Factors” on page 29. \nISSUER’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY \nOur Company, having made all reasonable inquiries, accepts responsibility for and confir...",
+        "KPIs \nUnit \nAs at and for the Financial Year ended March 31 \nMarch 31, 2026 \nMarch 31, 2025 \nMarch 31, 2024 \nGAAP measures \nRevenue from Operations(1) \n₹ in million \n6,261.12 \n4,796.83 \n3,965.30 \nNet ...",
+        "Investors are advised to read the risk factors carefully before taking an investment decision in the Offer. Details of our top 10 risk \nfactors are set forth below: \n1. \nOur top ten customers contribu..."
+      ],
+      "financial_summary_snippets": [
+        "YOGIJI DIGI LIMITED (FORMERLY KNOWN AS YOGIJI DIGI PRIVATE LIMITED) \nCORPORATE IDENTITY NUMBER: U74899HR1993PLC032121 \nREGISTERED AND CORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND T",
+        "investors is invited to “Risk Factors” on page 29. \nISSUER’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY \nOur Company, having made all reasonable inquiries, accepts responsib",
+        "IN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES \nOF THE DRAFT RED HERRING PROSPECTUS \nPlease scan this QR code to \nview the Draft Red Herring \nP"
+      ]
+    },
+    {
+      "source_file": "YOGIJI_DIGI_LIMITED_-_DRHPYOGIJI_DIGI_LIMITED_-_Draft_Abridged_prospectus.pdf",
+      "file_type": "PDF",
+      "company_name": "YOGIJI DIGI LIMITED - YOGIJI DIGI LIMITED - Draft Abridged prospectus",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ",",
+        "profit_after_tax_pat": "404.24 \n 280.40 \n 199.32"
+      },
+      "top_extracted_risk_factors": [
+        "(Please scan this QR code to view this Draft Red Herring Prospectus and the Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated July 20, 2026 \nPlease read Section 32 of the Companies Act, ...",
+        "decision in the Offer. For taking an investment decision, investors must rely on their own examination of our Company and the Offer, including \nthe risks involved. The Equity Shares in the Offer have ...",
+        "DRAFT RED HERRING PROSPECTUS \nDated July 20, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n100% Book Built Offe...",
+        "TABLE OF CONTENTS \n \nSECTION I - GENERAL ..................................................................................................................................... 1 \nDEFINITIONS AND ABBREV..."
+      ],
+      "financial_summary_snippets": [
+        "(Please scan this QR code to view this Draft Red Herring Prospectus and the Draft Abridged Prospectus) \nDRAFT RED HERRING PROSPECTUS \nDated July 20, 2026 \nPlease read Section 32 of",
+        "decision in the Offer. For taking an investment decision, investors must rely on their own examination of our Company and the Offer, including \nthe risks involved. The Equity Share",
+        "DRAFT RED HERRING PROSPECTUS \nDated July 20, 2026 \nPlease read Section 32 of the Companies Act, 2013 \n(This Draft Red Herring Prospectus will be updated upon filing with the RoC) \n"
+      ]
+    },
+    {
+      "source_file": "Yogiji_Digi_Limited_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Yogiji Digi Limited",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "YOGIJI DIGI LIMITED (FORMERLY KNOWN AS YOGIJI DIGI PRIVATE LIMITED) \nCORPORATE IDENTITY NUMBER: U74899HR1993PLC032121 \nREGISTERED AND CORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nP...",
+        "investors is invited to “Risk Factors” on page 29. \nISSUER’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY \nOur Company, having made all reasonable inquiries, accepts responsibility for and confir...",
+        "KPIs \nUnit \nAs at and for the Financial Year ended March 31 \nMarch 31, 2026 \nMarch 31, 2025 \nMarch 31, 2024 \nGAAP measures \nRevenue from Operations(1) \n₹ in million \n6,261.12 \n4,796.83 \n3,965.30 \nNet ...",
+        "Investors are advised to read the risk factors carefully before taking an investment decision in the Offer. Details of our top 10 risk \nfactors are set forth below: \n1. \nOur top ten customers contribu..."
+      ],
+      "financial_summary_snippets": [
+        "YOGIJI DIGI LIMITED (FORMERLY KNOWN AS YOGIJI DIGI PRIVATE LIMITED) \nCORPORATE IDENTITY NUMBER: U74899HR1993PLC032121 \nREGISTERED AND CORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND T",
+        "investors is invited to “Risk Factors” on page 29. \nISSUER’S AND SELLING SHAREHOLDERS’ ABSOLUTE RESPONSIBILITY \nOur Company, having made all reasonable inquiries, accepts responsib",
+        "IN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES \nOF THE DRAFT RED HERRING PROSPECTUS \nPlease scan this QR code to \nview the Draft Red Herring \nP"
+      ]
+    },
+    {
+      "source_file": "Zenith_Organics_DRHP.pdf",
+      "file_type": "PDF",
+      "company_name": "Zenith Organics",
+      "doc_type": "DRHP",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": ".",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Zenith Organics Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/4615\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers contribute 55% of total..."
+      ],
+      "financial_summary_snippets": [
+        "DRAFT RED HERRING PROSPECTUS (DRHP)\nCOMPANY NAME: Zenith Organics Limited\nFILING REFERENCE: SEBI/DRHP/2026/SME/4615\n1. RISK FACTORS\n- Materiality & Specificity: Top 3 customers con"
+      ]
+    }
+  ]
+}
