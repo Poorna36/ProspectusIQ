@@ -46,30 +46,36 @@ export async function adminRoutes(fastify: FastifyInstance): Promise<void> {
     }
 
     const { filingId } = req.params as any;
-    const { intermediaryId, assignedRole } = req.body as any;
+    // Blueprint spec: body uses `userId` and `assignedRole`
+    const { userId, assignedRole } = req.body as any;
+
+    if (!userId || !assignedRole) {
+      return reply.status(400).send({ success: false, error: { code: 'VALIDATION_ERROR', message: 'userId and assignedRole are required', requestId: reqId } });
+    }
 
     const filing = db.select().from(filings).where(eq(filings.filing_id, filingId)).get();
     if (!filing) return reply.status(404).send({ success: false, error: { code: 'NOT_FOUND', message: 'Filing not found', requestId: reqId } });
 
-    const existing = db.select().from(filingAssignments).where(and(eq(filingAssignments.filing_id, filingId), eq(filingAssignments.user_id, intermediaryId))).get();
+    const existing = db.select().from(filingAssignments).where(and(eq(filingAssignments.filing_id, filingId), eq(filingAssignments.user_id, userId))).get();
     if (existing) {
       return reply.status(409).send({ success: false, error: { code: 'CONFLICT', message: 'User already assigned', requestId: reqId } });
     }
 
     const now = Date.now();
+    const assignmentId = uuidv4();
     db.insert(filingAssignments).values({
-      assignment_id: uuidv4(),
+      assignment_id: assignmentId,
       filing_id:     filingId,
-      user_id:       intermediaryId,
+      user_id:       userId,
       assigned_role: assignedRole,
       assigned_at:   now,
     }).run();
 
-    writeAuditEvent({ filingId, eventType: 'INTERMEDIARY_ASSIGNED', actorId: req.user!.userId, actorType: 'USER', payload: { intermediaryId, assignedRole } });
+    writeAuditEvent({ filingId, eventType: 'INTERMEDIARY_ASSIGNED', actorId: req.user!.userId, actorType: 'USER', payload: { userId, assignedRole } });
 
-    return reply.status(200).send({
+    return reply.status(201).send({
       success: true,
-      data: { filingId, intermediaryId, assignedRole, assignedAt: new Date(now).toISOString() },
+      data: { assignmentId, filingId, userId, assignedRole, assignedAt: new Date(now).toISOString() },
       meta: { requestId: reqId },
     });
   });

@@ -114,7 +114,7 @@ export async function flagsRoutes(fastify: FastifyInstance): Promise<void> {
     }
 
     const now = Date.now();
-    db.update(flagsTable).set({ status: 'ESCALATED', resolution_note: escalationNote || null }).where(eq(flagsTable.flag_id, flagId)).run();
+    db.update(flagsTable).set({ status: 'ESCALATED', escalation_note: escalationNote || null } as any).where(eq(flagsTable.flag_id, flagId)).run();
 
     writeAuditEvent({ filingId, eventType: 'FLAG_ESCALATED', actorId: req.user!.userId, actorType: 'USER', payload: { flagId, escalationNote } });
 

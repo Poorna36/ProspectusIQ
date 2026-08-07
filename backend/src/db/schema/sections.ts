@@ -16,6 +16,7 @@ export const sections = sqliteTable('sections', {
   flag_count_critical:  integer('flag_count_critical').notNull().default(0),
   flag_count_review:    integer('flag_count_review').notNull().default(0),
   flag_count_resolved:  integer('flag_count_resolved').notNull().default(0),
+  certified_at:         integer('certified_at'),
   created_at:           integer('created_at').notNull(),
   updated_at:           integer('updated_at').notNull(),
 });

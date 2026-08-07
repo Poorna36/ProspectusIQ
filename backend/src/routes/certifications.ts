@@ -57,7 +57,7 @@ export async function certificationRoutes(fastify: FastifyInstance): Promise<voi
 
     // Check if all 3 roles have certified → lock the filing
     const allCerts = db.select().from(certifications).where(eq(certifications.filing_id, filingId)).all();
-    const certifiedRoles = new Set(allCerts.map(c => c.certifier_role));
+    const certifiedRoles = new Set<string>(allCerts.map(c => c.certifier_role));
     const allRolesCertified = ['MERCHANT_BANKER', 'LEGAL_COUNSEL', 'AUDITOR'].every(r => certifiedRoles.has(r));
 
     let filingStatus = 'UNDER_REVIEW';
@@ -66,8 +66,8 @@ export async function certificationRoutes(fastify: FastifyInstance): Promise<voi
       const docHash = createHash('sha256').update(`${filingId}:${now}:CERTIFIED`).digest('hex');
       db.update(filings).set({ status: 'CERTIFIED_LOCKED', locked_at: now, locked_hash: docHash, updated_at: now })
         .where(eq(filings.filing_id, filingId)).run();
-      // Lock all sections
-      db.update(sections).set({ status: 'CERTIFIED_LOCKED', completion_percent: 100, updated_at: now })
+      // Lock all sections and stamp certified_at timestamp
+      db.update(sections).set({ status: 'CERTIFIED_LOCKED', completion_percent: 100, certified_at: now, updated_at: now } as any)
         .where(eq(sections.filing_id, filingId)).run();
       filingStatus = 'CERTIFIED_LOCKED';
 
@@ -132,25 +132,63 @@ export async function certificationRoutes(fastify: FastifyInstance): Promise<voi
     // Ensure uploads dir exists
     if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
 
-    const data = await req.file();
-    if (!data) return reply.status(400).send({ success: false, error: { code: 'VALIDATION_ERROR', message: 'No file uploaded', requestId: reqId } });
+    // Parse multipart — iterate parts to collect file + fields per blueprint spec
+    // Blueprint: documentType and sectionKey come as multipart form-data fields, not query params
+    let fileData: any = null;
+    let documentType = 'OTHER';
+    let sectionKey: string | null = null;
 
-    const documentType = (req.query as any).documentType || 'OTHER';
+    const parts = req.parts();
+    for await (const part of parts) {
+      if (part.type === 'file') {
+        fileData = part;
+        // Drain/buffer the file
+        const chunks: Buffer[] = [];
+        for await (const chunk of part.file) {
+          chunks.push(chunk);
+        }
+        fileData.buffer = Buffer.concat(chunks);
+        fileData.filename = part.filename;
+      } else {
+        // Form field
+        if (part.fieldname === 'documentType') documentType = (part as any).value || 'OTHER';
+        if (part.fieldname === 'sectionKey') sectionKey = (part as any).value || null;
+      }
+    }
+
+    if (!fileData || !fileData.buffer) {
+      return reply.status(400).send({ success: false, error: { code: 'VALIDATION_ERROR', message: 'No file uploaded', requestId: reqId } });
+    }
+
     const docId = uuidv4();
-    const filename = `${docId}-${data.filename}`;
+    const filename = `${docId}-${fileData.filename}`;
     const filePath = path.join(UPLOADS_DIR, filename);
 
-    // Save file
-    await new Promise<void>((resolve, reject) => {
-      const writeStream = fs.createWriteStream(filePath);
-      data.file.pipe(writeStream);
-      writeStream.on('finish', resolve);
-      writeStream.on('error', reject);
-    });
+    // Write buffered file to disk
+    fs.writeFileSync(filePath, fileData.buffer);
+
+    // Resolve section_id from sectionKey if provided
+    let resolvedSectionId: string | null = null;
+    if (sectionKey) {
+      const sec = db.select().from(sections).where(and(eq(sections.filing_id, filingId), eq(sections.section_key, sectionKey))).get();
+      resolvedSectionId = sec?.section_id ?? null;
+    }
 
     const stats = fs.statSync(filePath);
     const now = Date.now();
-    db.insert(documents).values({ document_id: docId, filing_id: filingId, document_type: documentType, filename: data.filename, file_path: filePath, file_size: stats.size, uploaded_by: req.user!.userId, uploaded_at: now }).run();
+    db.insert(documents).values({
+      document_id:   docId,
+      filing_id:     filingId,
+      document_type: documentType as any,
+      section_id:    resolvedSectionId,
+      filename:      fileData.filename,
+      file_path:     filePath,
+      file_size:     stats.size,
+      uploaded_by:   req.user!.userId,
+      uploaded_at:   now,
+    }).run();
+
+    writeAuditEvent({ filingId, eventType: 'DOCUMENT_UPLOADED', actorId: req.user!.userId, actorType: 'USER', payload: { documentId: docId, documentType, sectionKey } });
 
     return reply.status(202).send({ success: true, data: { documentId: docId, status: 'PROCESSING', jobId: reqId }, meta: { requestId: reqId } });
   });
@@ -188,8 +226,8 @@ export async function certificationRoutes(fastify: FastifyInstance): Promise<voi
     });
   });
 
-  // ── GET /filings/:filingId/audit-trail (Group I) ──────────────────────────
-  fastify.get('/filings/:filingId/audit-trail', { preHandler: [fastify.authenticate] }, async (req: FastifyRequest, reply: FastifyReply) => {
+  // ── GET /filings/:filingId/audit-log (Group I) ──────────────────────────
+  fastify.get('/filings/:filingId/audit-log', { preHandler: [fastify.authenticate] }, async (req: FastifyRequest, reply: FastifyReply) => {
     const reqId = (req as any).requestId;
     const { filingId } = req.params as any;
     const query = req.query as any;
@@ -214,6 +252,66 @@ export async function certificationRoutes(fastify: FastifyInstance): Promise<voi
         timestamp: new Date(e.timestamp).toISOString(),
       })),
       meta: { requestId: reqId, page, pageSize, total: events.length },
+    });
+  });
+
+  // ── POST /filings/:filingId/phases/:phaseId/e-sign-lock (Group E) ────────
+  fastify.post('/filings/:filingId/phases/:phaseId/e-sign-lock', { preHandler: [fastify.authenticate] }, async (req: FastifyRequest, reply: FastifyReply) => {
+    const reqId = (req as any).requestId;
+    if (req.user!.role !== 'INTERMEDIARY') {
+      return reply.status(403).send({ success: false, error: { code: 'FORBIDDEN', message: 'Only INTERMEDIARY can e-sign lock', requestId: reqId } });
+    }
+
+    const { filingId, phaseId } = req.params as any;
+    const { signatoryName, sebiRegistrationNo, eSignToken, declarationAccepted } = req.body as any;
+
+    if (!signatoryName || !sebiRegistrationNo || !eSignToken || declarationAccepted !== true) {
+      return reply.status(400).send({ success: false, error: { code: 'VALIDATION_ERROR', message: 'Invalid eSign payload or declaration not accepted', requestId: reqId } });
+    }
+
+    // Demo: Hash the token to simulate DSC verification
+    const now = Date.now();
+    const hash = createHash('sha256').update(`${phaseId}:${eSignToken}:${now}`).digest('hex');
+
+    writeAuditEvent({ filingId, eventType: 'PHASE_ESIGN_LOCKED', actorId: req.user!.userId, actorType: 'USER', payload: { phaseId, signatoryName, sebiRegistrationNo, hash } });
+
+    return reply.send({
+      success: true,
+      data: {
+        status: 'CERTIFIED_LOCKED',
+        lockedAt: new Date(now).toISOString(),
+        bronzeSealApplied: true,
+        digitalSignatureHash: hash,
+      },
+      meta: { requestId: reqId },
+    });
+  });
+
+  // ── POST /filings/:filingId/phases/:phaseId/request-unlock (Group E) ─────
+  fastify.post('/filings/:filingId/phases/:phaseId/request-unlock', { preHandler: [fastify.authenticate] }, async (req: FastifyRequest, reply: FastifyReply) => {
+    const reqId = (req as any).requestId;
+    if (req.user!.role !== 'PROMOTER' && req.user!.role !== 'INTERMEDIARY') {
+      return reply.status(403).send({ success: false, error: { code: 'FORBIDDEN', message: 'Unauthorized to request unlock', requestId: reqId } });
+    }
+
+    const { filingId, phaseId } = req.params as any;
+    const { amendmentRationale } = req.body as any;
+
+    if (!amendmentRationale) {
+      return reply.status(400).send({ success: false, error: { code: 'VALIDATION_ERROR', message: 'amendmentRationale required', requestId: reqId } });
+    }
+
+    const reqUnlockId = uuidv4();
+    writeAuditEvent({ filingId, eventType: 'PHASE_UNLOCK_REQUESTED', actorId: req.user!.userId, actorType: 'USER', payload: { phaseId, requestId: reqUnlockId, rationale: amendmentRationale } });
+
+    return reply.status(200).send({
+      success: true,
+      data: {
+        requestId: reqUnlockId,
+        status: 'UNLOCK_REQUESTED',
+        notifiedRoles: ['ADMIN', 'INTERMEDIARY'],
+      },
+      meta: { requestId: reqId },
     });
   });
 }

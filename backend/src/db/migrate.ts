@@ -54,6 +54,7 @@ export function runMigrations(): void {
       flag_count_critical INTEGER NOT NULL DEFAULT 0,
       flag_count_review   INTEGER NOT NULL DEFAULT 0,
       flag_count_resolved INTEGER NOT NULL DEFAULT 0,
+      certified_at        INTEGER,
       created_at          INTEGER NOT NULL,
       updated_at          INTEGER NOT NULL,
       UNIQUE(filing_id, section_key)
@@ -97,6 +98,7 @@ export function runMigrations(): void {
       description      TEXT NOT NULL,
       clause_reference TEXT,
       resolution_note  TEXT,
+      escalation_note  TEXT,
       created_at       INTEGER NOT NULL,
       resolved_at      INTEGER,
       resolved_by      TEXT
@@ -188,6 +190,30 @@ export function runMigrations(): void {
     CREATE INDEX IF NOT EXISTS idx_notifications_user ON notifications(user_id, is_read);
     CREATE INDEX IF NOT EXISTS idx_messages_filing ON messages(filing_id);
   `);
+
+  // ── Safe ALTER TABLE migrations (no-op if column already exists) ──────────
+  // These run AFTER the CREATE TABLE IF NOT EXISTS block to upgrade existing DBs.
+  const alterStatements = [
+    // users: sensitive encrypted fields
+    `ALTER TABLE users ADD COLUMN pan_number_encrypted TEXT`,
+    `ALTER TABLE users ADD COLUMN aadhaar_number_encrypted TEXT`,
+    `ALTER TABLE users ADD COLUMN bank_account_encrypted TEXT`,
+    // sections: certified_at timestamp
+    `ALTER TABLE sections ADD COLUMN certified_at INTEGER`,
+    `ALTER TABLE sections ADD COLUMN section_label TEXT NOT NULL DEFAULT ''`,
+    // flags: separate escalation note
+    `ALTER TABLE flags ADD COLUMN escalation_note TEXT`,
+    // filings: engagement code
+    `ALTER TABLE filings ADD COLUMN engagement_code TEXT`,
+  ];
+
+  for (const stmt of alterStatements) {
+    try {
+      sqlite.exec(stmt);
+    } catch {
+      // Column already exists — safe to ignore duplicate column errors
+    }
+  }
 
   console.log('[DB] Migrations complete — all tables ready');
 }

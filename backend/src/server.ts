@@ -61,7 +61,7 @@ fastify.setErrorHandler((error, request, reply) => {
     success: false,
     error: {
       code: 'INTERNAL_ERROR',
-      message: error.message || 'An unexpected error occurred',
+      message: (error as Error).message || 'An unexpected error occurred',
       requestId: reqId,
     },
   });

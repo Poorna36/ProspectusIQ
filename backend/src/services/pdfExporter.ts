@@ -27,7 +27,7 @@ export async function generateFilingPDF(filingId: string): Promise<string> {
   // Watermark for prototype
   doc.fontSize(40)
      .fillColor('#FF0000', 0.1)
-     .text('PROSPECTUSIQ DEMO', 50, 400, { angle: -45, align: 'center' });
+     .text('PROSPECTUSIQ DEMO', 50, 400, { align: 'center' } as any);
 
   // Title Page
   doc.fillColor('black', 1).fontSize(24).text('DRAFT RED HERRING PROSPECTUS', { align: 'center' });

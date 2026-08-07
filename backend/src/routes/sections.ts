@@ -63,10 +63,16 @@ export async function sectionsRoutes(fastify: FastifyInstance): Promise<void> {
           verifierFlags: JSON.parse(latestDraft.verifier_flags),
           retryCount: latestDraft.retry_count,
           modelVersion: latestDraft.model_version,
-          humanEditedText: latestDraft.human_edited_text ?? null,
-          humanEditedBy: latestDraft.human_edited_by ?? null,
-          humanEditedAt: latestDraft.human_edited_at ? new Date(latestDraft.human_edited_at).toISOString() : null,
         } : null,
+        // Blueprint §5 Group C: humanEdited fields are top-level, NOT nested inside aiDraft
+        humanEditedText: latestDraft?.human_edited_text ?? null,
+        humanEditedBy: latestDraft?.human_edited_by ?? null,
+        humanEditedAt: latestDraft?.human_edited_at
+          ? new Date(latestDraft.human_edited_at).toISOString()
+          : null,
+        certifiedAt: (section as any).certified_at
+          ? new Date((section as any).certified_at).toISOString()
+          : null,
         updatedAt: new Date(section.updated_at).toISOString(),
       },
       meta: { requestId: reqId },

@@ -12,6 +12,7 @@ export const flags = sqliteTable('flags', {
   description:      text('description').notNull(),
   clause_reference: text('clause_reference'),
   resolution_note:  text('resolution_note'),
+  escalation_note:  text('escalation_note'),
   created_at:       integer('created_at').notNull(),
   resolved_at:      integer('resolved_at'),
   resolved_by:      text('resolved_by'),
