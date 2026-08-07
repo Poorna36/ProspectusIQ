@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Filing, SectionData } from '../types';
+import { ProspectusIQApi } from '../services/api';
 import { PaneMode } from '../types/ui';
 import { SectionsNavigationPane } from '../components/workbench/SectionsNavigationPane';
 import { DocumentEditorPane } from '../components/workbench/DocumentEditorPane';
@@ -38,7 +39,12 @@ export const WorkbenchEditorView: React.FC<WorkbenchEditorViewProps> = ({
     setIsRegenerateModalOpen(true);
   };
 
-  const handleSaveParagraphEdit = (newText: string) => {
+  const handleSaveParagraphEdit = async (newText: string) => {
+    try {
+      await ProspectusIQApi.saveHumanRedline(filing.id, activeSection.key, newText);
+    } catch (e) {
+      console.warn('Backend save human redline API notice:', e);
+    }
     const updated: SectionData = {
       ...activeSection,
       humanRedlineText: newText,
@@ -47,9 +53,14 @@ export const WorkbenchEditorView: React.FC<WorkbenchEditorViewProps> = ({
     onUpdateSection(updated);
   };
 
-  const handleResolveFlag = (flagId: string) => {
+  const handleResolveFlag = async (flagId: string) => {
+    try {
+      await ProspectusIQApi.resolveFlag(filing.id, flagId, 'Resolved by Lead Counsel');
+    } catch (e) {
+      console.warn('Backend resolve flag API notice:', e);
+    }
     const updatedFlags = activeSection.flags.map((f) =>
-      f.id === flagId ? { ...f, status: 'RESOLVED' as const, resolvedBy: 'Priya Shah (Lead Counsel)' } : f
+      (f.id === flagId || f.flagId === flagId) ? { ...f, status: 'RESOLVED' as const, resolvedBy: 'Priya Shah (Lead Counsel)' } : f
     );
     const allResolved = updatedFlags.every((f) => f.status === 'RESOLVED');
 

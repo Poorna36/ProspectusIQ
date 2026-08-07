@@ -14,10 +14,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@esbuild/linux-x64": "^0.28.1",
     "@fastify/cors": "^11.3.0",
     "@fastify/multipart": "^10.1.0",
     "bcrypt": "^6.0.0",
-    "better-sqlite3": "^13.0.3",
+    "better-sqlite3": "^9.2.2",
     "drizzle-orm": "^0.45.2",
     "fastify": "^5.11.2",
     "jose": "^6.2.8",

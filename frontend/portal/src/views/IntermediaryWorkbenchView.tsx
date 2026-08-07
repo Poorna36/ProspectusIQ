@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Filing, SectionData, DueDiligenceRecord, PeerMetric, AuditLogItem } from '../types';
+import { ProspectusIQApi } from '../services/api';
 import { MultiFilingDashboard } from '../components/intermediary/MultiFilingDashboard';
 import { DraftRedlineEditor } from '../components/intermediary/DraftRedlineEditor';
 import { FlagResolutionDrawer } from '../components/intermediary/FlagResolutionDrawer';
@@ -30,7 +31,12 @@ export const IntermediaryWorkbenchView: React.FC<IntermediaryWorkbenchViewProps>
 
   const activeSection = filing.sections.find((s) => s.key === activeSectionKey) || filing.sections[1];
 
-  const handleSaveRedline = (newText: string) => {
+  const handleSaveRedline = async (newText: string) => {
+    try {
+      await ProspectusIQApi.saveHumanRedline(filing.id, activeSection.key, newText);
+    } catch (e) {
+      console.warn('Backend save redline API call handled:', e);
+    }
     const updated: SectionData = {
       ...activeSection,
       humanRedlineText: newText,
@@ -39,9 +45,14 @@ export const IntermediaryWorkbenchView: React.FC<IntermediaryWorkbenchViewProps>
     onUpdateSection(updated);
   };
 
-  const handleResolveFlag = (flagId: string) => {
+  const handleResolveFlag = async (flagId: string) => {
+    try {
+      await ProspectusIQApi.resolveFlag(filing.id, flagId, 'Resolved by Lead Intermediary');
+    } catch (e) {
+      console.warn('Backend resolve flag API call handled:', e);
+    }
     const updatedFlags = activeSection.flags.map((f) =>
-      f.id === flagId ? { ...f, status: 'RESOLVED' as const, resolvedBy: 'Lead Intermediary' } : f
+      (f.id === flagId || f.flagId === flagId) ? { ...f, status: 'RESOLVED' as const, resolvedBy: 'Lead Intermediary' } : f
     );
     const allFlagsResolved = updatedFlags.every((f) => f.status === 'RESOLVED');
 

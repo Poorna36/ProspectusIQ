@@ -13,6 +13,13 @@ ENV/
 data/sebi_official_raw/*.pdf
 ml/data/sebi_official_raw/*.pdf
 
+# Node / Web
+node_modules/
+dist/
+build/
+*.db-wal
+*.db-shm
+
 # IDE / System
 .vscode/
 .idea/

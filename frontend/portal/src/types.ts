@@ -4,13 +4,14 @@ export type UserRole = 'PROMOTER' | 'INTERMEDIARY';
 
 export interface Flag {
   id: string;
+  flagId?: string;
   sectionKey: string;
   severity: 'CRITICAL' | 'REVIEW';
   title: string;
   description: string;
   clauseReference: string;
   suggestedFix?: string;
-  status: 'OPEN' | 'RESOLVED' | 'WAIVED';
+  status: 'OPEN' | 'RESOLVED' | 'WAIVED' | 'ESCALATED';
   resolvedBy?: string;
   resolvedAt?: string;
 }
@@ -35,13 +36,14 @@ export interface SectionData {
 
 export interface Filing {
   id: string;
+  filingId?: string;
   companyName: string;
   cin: string;
   gstin: string;
   sector: string;
   targetIssueSize: string; // e.g. ₹28.5 Cr
   completionPercent: number;
-  overallStatus: 'DRAFTING' | 'INTERMEDIARY_REVIEW' | 'SEBI_SUBMITTED' | 'CERTIFIED_SEALED';
+  overallStatus: 'DRAFTING' | 'INTERMEDIARY_REVIEW' | 'SEBI_SUBMITTED' | 'CERTIFIED_SEALED' | 'DRAFT_IN_PROGRESS' | 'PENDING_REVIEW' | 'CERTIFIED_LOCKED';
   sections: SectionData[];
 }
 
@@ -73,4 +75,54 @@ export interface AuditLogItem {
   action: string;
   details: string;
   hash: string;
+}
+
+export interface ReadinessIndexData {
+  grade: string;
+  queryRiskLevel: 'HIGH' | 'MEDIUM' | 'LOW';
+  scores: {
+    hardRules: number;
+    numericReconciliation: number;
+    riskSpecificity: number;
+    unquantifiedClaims: number;
+  };
+}
+
+export interface ScheduleViItem {
+  clauseReference: string;
+  requirement: string;
+  location: string;
+  status: 'VERIFIED' | 'PENDING';
+}
+
+export interface ReconciledVariableItem {
+  variableKey: string;
+  value: string;
+  reconciled: boolean;
+  footprint: Array<{
+    chapter: string;
+    description: string;
+  }>;
+}
+
+export interface CertificationRecord {
+  certificationId: string;
+  filingId?: string;
+  certifiedBy: string;
+  certifierRole: string;
+  certifiedAt: string;
+}
+
+export interface AuthUser {
+  userId: string;
+  email: string;
+  fullName: string;
+  role: 'PROMOTER' | 'INTERMEDIARY' | 'ADMIN';
+  intermediaryRole?: string;
+  companyName?: string;
+}
+
+export interface AuthResponse {
+  user: AuthUser;
+  accessToken: string;
 }
