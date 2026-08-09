@@ -47,3 +47,9 @@ node_modules/
 # --- Database ---
 *.db-wal
 *.db-shm
+
+# --- Frontend & Environment ---
+.env.local
+
+# --- Vector Database ---
+ml/data/chroma_db/
