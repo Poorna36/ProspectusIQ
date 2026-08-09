@@ -224,6 +224,14 @@ def generate_vector_embeddings_and_index() -> dict:
     chunks_list = []
     for doc in parsed_data.get("documents", []):
         pdf_name = doc.get("pdf_name", "sebi_doc.pdf")
+        is_obs = any(k in pdf_name.upper() for k in ["OBSERVATION", "LETTER"])
+        is_reg = any(k in pdf_name.upper() for k in ["ICDR", "EMERGE", "BSE_SME", "REGULATIONS", "RULES"])
+        if is_obs:
+            doc_type_val = "Observation letters"
+        elif is_reg:
+            doc_type_val = "Regulations"
+        else:
+            doc_type_val = "DRHP"
         for chunk in doc.get("chunks", []):
             text = chunk.get("text", "").strip()
             if text and len(text) > 20:
@@ -232,6 +240,7 @@ def generate_vector_embeddings_and_index() -> dict:
                     "pdf_source": pdf_name,
                     "page": chunk.get("page", 1),
                     "section": chunk.get("section", "GENERAL DISCLOSURES"),
+                    "doc_type": chunk.get("doc_type") or doc_type_val,
                     "text": text
                 })
                 
@@ -361,9 +370,13 @@ def extract_structured_financial_metrics() -> dict:
                 "Litigation and compliance risk regarding SEBI ICDR regulations."
             ]
             
+        is_reg = any(k in pdf_name.upper() for k in ["ICDR", "EMERGE", "BSE_SME", "REGULATIONS", "RULES"])
+        doc_type_val = "Regulations" if is_reg else "DRHP"
+        
         company_extractions.append({
             "pdf_source": pdf_name,
             "company_name": company_name,
+            "doc_type": doc_type_val,
             "key_metrics": {
                 "debt_to_equity_ratio": debt_to_equity or "0.42 (Restated FY25)",
                 "net_revenue": revenue or "INR 450.50 Crore (FY25)",

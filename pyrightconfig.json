@@ -1,0 +1,19 @@
+{
+  "venvPath": ".",
+  "venv": "venv",
+  "reportMissingImports": "error",
+  "reportMissingTypeStubs": false,
+  "pythonVersion": "3.12",
+  "analysis": {
+    "autoSearchPaths": true,
+    "useLibraryCodeForTypes": true,
+    "diagnosticMode": "workspace"
+  },
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.gemini/**",
+    "**/brain/**",
+    "**/scratch/**"
+  ]
+}
