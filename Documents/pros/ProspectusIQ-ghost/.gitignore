@@ -53,5 +53,10 @@ node_modules/
 # --- Frontend & Environment ---
 .env.local
 
-# --- Vector Database ---
+# --- Vector Database & Large ML Data ---
 ml/data/chroma_db/
+ml/data/vector_db/
+ml/data/sebi_cleaned/
+ml/data/*.pdf
+data/*.pdf
+
