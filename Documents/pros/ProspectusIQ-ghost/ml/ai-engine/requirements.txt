@@ -1,0 +1,18 @@
+# ProspectusIQ ML Engine — Python Dependencies
+# Install: pip install -r requirements.txt
+#
+# Note: faiss-cpu, numpy, sentence-transformers are expected to be
+# pre-installed in the system Python environment. Only the service-layer
+# deps are listed here with loose pins for maximum compatibility.
+
+fastapi
+uvicorn[standard]
+python-dotenv
+joblib
+google-generativeai
+httpx
+
+# Already installed system-wide (pre-installed):
+# faiss-cpu
+# numpy
+# sentence-transformers

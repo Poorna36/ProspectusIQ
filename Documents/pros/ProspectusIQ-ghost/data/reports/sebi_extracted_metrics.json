@@ -1,0 +1,105 @@
+{
+  "project": "ProspectusIQ Financial Extraction Engine",
+  "total_documents_analyzed": 5,
+  "companies": [
+    {
+      "pdf_source": "GNI_INFRASTRUCTURE_LIMITED_-_Draft_Abridged_prospectus.pdf",
+      "company_name": "GNI INFRASTRUCTURE LIMITED - Draft Abridged prospectus",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor, Gut No. 107, Plot N...",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consultation with the BRLM...",
+        "6 \n \n \nDetails of KPIs as at/ for the nine-month period ended December 31, 2025, and for the financial years ended March 31, 2025, \nMarch 31, 2024 and March 31, 2023 \n \nParticular \nUnit \nAs at end for...",
+        "8 \n \n10. \nOur contingent liabilities amounted to ₹2,288.60 million, ₹2,100.62 million, ₹1,195.69 million and ₹1,142.81 million \nas of December 31, 2025, Fiscal 2025, Fiscal 2024 and Fiscal 2023, respe..."
+      ],
+      "financial_summary_snippets": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor,",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consul",
+        "1 \n \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF \nTHE DRAFT RED HERRING PROSPECTUS \n \n \n \n \n \nPlease scan this QR code to \nview the Draft Red H"
+      ]
+    },
+    {
+      "pdf_source": "GNI_Infrastructure_Limited_DRHP.pdf",
+      "company_name": "GNI Infrastructure Limited",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor, Gut No. 107, Plot N...",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consultation with the BRLM...",
+        "6 \n \n \nDetails of KPIs as at/ for the nine-month period ended December 31, 2025, and for the financial years ended March 31, 2025, \nMarch 31, 2024 and March 31, 2023 \n \nParticular \nUnit \nAs at end for...",
+        "8 \n \n10. \nOur contingent liabilities amounted to ₹2,288.60 million, ₹2,100.62 million, ₹1,195.69 million and ₹1,142.81 million \nas of December 31, 2025, Fiscal 2025, Fiscal 2024 and Fiscal 2023, respe..."
+      ],
+      "financial_summary_snippets": [
+        "GNI INFRASTRUCTURE LIMITED \nCorporate Identity Number: U4210MH2007PLC173342 \nREGISTERED AND CORPORATE OFFICE \nCONTACT PERSON \nEMAIL AND TELEPHONE \nWEBSITE \nC/O GN House, 3rd Floor,",
+        "KFin Technologies Limited \nBID/OFFER PROGRAMME \nANCHOR INVESTOR BIDDING DATE \n[●] (1) \nBID/OFFER OPENS ON \n[●] (2) \nBID/ OFFER CLOSES ON \n[●] (2)(3) \n(1) Our Company may, in consul",
+        "1 \n \nIN THE NATURE OF ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT FEATURES OF \nTHE DRAFT RED HERRING PROSPECTUS \n \n \n \n \n \nPlease scan this QR code to \nview the Draft Red H"
+      ]
+    },
+    {
+      "pdf_source": "Indian_Gas_Exchange_Limited_-_Draft_Abridged_prospectus.pdf",
+      "company_name": "Indian Gas Exchange Limited - Draft Abridged prospectus",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Floor, Unit No. \n1.14(...",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements specifically made or ...",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \nRed \nHerring \nProspe...",
+        "7 \n \n11. Trade Volume represents the aggregate of quantity of each trade completed on exchange platform till the \nlast day of relevant Fiscal Year. \n12. Total number of trades represents the aggregate..."
+      ],
+      "financial_summary_snippets": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Fl",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements s",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \n"
+      ]
+    },
+    {
+      "pdf_source": "Indian_Gas_Exchange_Limited_DRHP.pdf",
+      "company_name": "Indian Gas Exchange Limited",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "INR 38.20 Crore (FY25)"
+      },
+      "top_extracted_risk_factors": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Floor, Unit No. \n1.14(...",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements specifically made or ...",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \nRed \nHerring \nProspe...",
+        "7 \n \n11. Trade Volume represents the aggregate of quantity of each trade completed on exchange platform till the \nlast day of relevant Fiscal Year. \n12. Total number of trades represents the aggregate..."
+      ],
+      "financial_summary_snippets": [
+        "1 \n \n \nINDIAN GAS EXCHANGE LIMITED \n \nCorporate Identity Number: U74999DL2019PLC357145 \nREGISTERED \nOFFICE \nCORPORATE \nOFFICE \nCONTACT PERSON \nEMAIL AND \nTELEPHONE \nWEBSITE \n1st Fl",
+        "2 \n \nof any such opinions or intentions misleading in any material respect. Further, the Promoter Selling Shareholder accepts responsibility for and confirms \nonly the statements s",
+        "1 \n \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR \ncode to view the Draft \n"
+      ]
+    },
+    {
+      "pdf_source": "MASTER_CHAINS_N_JEWELS_LIMITED_-_Draft_Abridged_Prospectus.pdf",
+      "company_name": "MASTER CHAINS N JEWELS LIMITED - Draft Abridged Prospectus",
+      "key_metrics": {
+        "debt_to_equity_ratio": "0.42 (Restated FY25)",
+        "net_revenue": "INR 450.50 Crore (FY25)",
+        "profit_after_tax_pat": "4"
+      },
+      "top_extracted_risk_factors": [
+        "MASTER CHAINS N JEWELS LIMITED \n(Formerly Master Chains N Jewels Private Limited and Master Chain Private Limited) \n \nCORPORATE IDENTITY NUMBER: U36911MH1997PLC107966 \n \nREGISTERED OFFICE \nCONTACT PER...",
+        "Draft Red Herring Prospectus as a whole or any of such information or the expression of any such opinions or intentions misleading in \nany material respect. \n \nFurther, the Promoter Selling Shareholde...",
+        "7 \n \nFor explanations of the above KPIs, see “Definitions and Abbreviations” on page 1 of the Draft Red Herring \nProspectus. \n \n8. Risk Factors \n \nSet forth below are the top 10 internal risk factors ..."
+      ],
+      "financial_summary_snippets": [
+        "MASTER CHAINS N JEWELS LIMITED \n(Formerly Master Chains N Jewels Private Limited and Master Chain Private Limited) \n \nCORPORATE IDENTITY NUMBER: U36911MH1997PLC107966 \n \nREGISTERED",
+        "Draft Red Herring Prospectus as a whole or any of such information or the expression of any such opinions or intentions misleading in \nany material respect. \n \nFurther, the Promote",
+        "1 \nIN THE NATURE OF DRAFT ABRIDGED PROSPECTUS - MEMORANDUM CONTAINING SALIENT \nFEATURES OF THE DRAFT RED HERRING PROSPECTUS \n \n \n \n \nPlease scan this QR code to \nview the Draft Red"
+      ]
+    }
+  ]
+}

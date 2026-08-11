@@ -1,0 +1,164 @@
+/* ProspectusIQ — Design System v2 */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ─── Landing / Public Site Palette (Original Rich Dark) ──────────── */
+  --color-dark-base: #0E1014;
+  --color-dark-surface: #181A1F;
+  --color-dark-card: #1E2028;
+  --color-dark-border: #2A2D35;
+  --color-dark-border-subtle: #222530;
+
+  /* Rich Deep Forest (logo/primary CTA on dark) */
+  --color-deep-forest: #1A4035;
+  --color-deep-forest-bright: #23543D;
+  --color-deep-forest-border: #2D6E50;
+  --color-forest-glow: rgba(35,84,61,0.35);
+
+  /* Antique Gold (IQ accent, highlights on dark) */
+  --color-antique-gold: #C9A84C;
+  --color-antique-gold-bright: #DDB94F;
+  --color-antique-gold-muted: #8A6A28;
+  --color-gold-glow: rgba(201,168,76,0.25);
+
+  /* ─── Workbench / App Palette (Royal Blue) ─────────────────────────── */
+  --color-royal-blue: #1D4ED8;
+  --color-royal-blue-hover: #1E40AF;
+  --color-royal-blue-light: #EFF6FF;
+  --color-royal-blue-glow: rgba(29,78,216,0.25);
+
+  /* ─── Promoter / SME Palette (Warm Orange) ──────────────────────────── */
+  --color-slight-orange: #F97316;
+  --color-orange-hover: #EA580C;
+  --color-orange-light: #FFF7ED;
+  --color-orange-glow: rgba(249,115,22,0.25);
+
+  /* ─── Shared Neutrals ────────────────────────────────────────────────── */
+  --color-creme: #FDFBF7;
+  --color-warm-ivory: #F8F5EF;
+  --color-surface-white: #FFFFFF;
+  --color-primary-charcoal: #0E1014;
+  --color-secondary-charcoal: #1E2028;
+  --color-primary-text: #111827;
+  --color-secondary-text: #4B5563;
+  --color-muted-text: #9CA3AF;
+  --color-border-stone: #E5E7EB;
+
+  /* Status Colors */
+  --status-ai-color: #4B5563;
+  --status-ai-bg: #F3F4F6;
+  --status-ai-border: #D1D5DB;
+
+  --status-source-color: #1D4ED8;
+  --status-source-bg: #EFF6FF;
+  --status-source-border: #BFDBFE;
+
+  --status-passed-color: #047857;
+  --status-passed-bg: #D1FAE5;
+  --status-passed-border: #6EE7B7;
+
+  --status-approved-color: #065F46;
+  --status-approved-bg: #A7F3D0;
+  --status-approved-border: #34D399;
+
+  --status-review-color: #C2410C;
+  --status-review-bg: #FFEDD5;
+  --status-review-border: #FDBA74;
+
+  --status-failed-color: #B91C1C;
+  --status-failed-bg: #FEE2E2;
+  --status-failed-border: #FCA5A5;
+
+  --status-superseded-color: #6B7280;
+  --status-superseded-bg: #F3F4F6;
+  --status-superseded-border: #E5E7EB;
+
+  --status-certified-color: #B45309;
+  --status-certified-bg: #FEF3C7;
+  --status-certified-border: #FDE68A;
+
+  /* Fonts */
+  --font-sans: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-serif: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.15), 0 10px 10px -5px rgba(0,0,0,0.08);
+  --shadow-dark-glow: 0 0 40px rgba(35,84,61,0.3), 0 20px 40px rgba(0,0,0,0.5);
+  --shadow-gold-glow: 0 0 20px rgba(201,168,76,0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-dark-base);
+  color: var(--color-primary-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-dark-surface); }
+::-webkit-scrollbar-thumb { background: #2A2D35; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3A3D47; }
+
+/* ─── Animations ──────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes goldPulse {
+  0%, 100% { box-shadow: 0 0 0 0 var(--color-gold-glow); }
+  50%       { box-shadow: 0 0 20px 6px var(--color-gold-glow); }
+}
+
+.animate-fade-in  { animation: fadeIn  0.35s cubic-bezier(0.16,1,0.3,1) forwards; }
+.animate-fade-up  { animation: fadeUp  0.5s  cubic-bezier(0.16,1,0.3,1) forwards; }
+
+.shimmer-skeleton {
+  background: linear-gradient(90deg, #1E2028 25%, #252830 50%, #1E2028 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}

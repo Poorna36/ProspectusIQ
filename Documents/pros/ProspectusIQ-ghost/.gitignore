@@ -1,0 +1,57 @@
+# ==============================================================================
+# ProspectusIQ .gitignore
+# ==============================================================================
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+.Python
+
+# --- Python Cache & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.so
+
+# --- SEBI Raw PDF Files ---
+data/sebi_official_raw/*.pdf
+ml/data/sebi_official_raw/*.pdf
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Temp & Logs ---
+*.log
+*.tmp
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+node_modules/
+
+# --- Database ---
+*.db-wal
+*.db-shm
+
+# --- Frontend & Environment ---
+.env.local
+
+# --- Vector Database ---
+ml/data/chroma_db/
