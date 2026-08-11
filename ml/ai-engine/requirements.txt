@@ -11,8 +11,6 @@ python-dotenv
 joblib
 google-generativeai
 httpx
+faiss-cpu
+numpy
 
-# Already installed system-wide (pre-installed):
-# faiss-cpu
-# numpy
-# sentence-transformers

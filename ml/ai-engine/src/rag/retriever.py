@@ -10,7 +10,10 @@ import os
 from pathlib import Path
 from typing import Optional
 
-import faiss
+try:
+    import faiss
+except ImportError:
+    faiss = None
 import numpy as np
 
 from .embeddings import embed_query
@@ -24,18 +27,20 @@ _faiss_index: faiss.Index | None = None
 _chunk_store: list[dict] | None = None
 
 
-def _load_index() -> tuple[faiss.Index, list[dict]]:
+def _load_index() -> tuple[Optional[object], list[dict]]:
     global _faiss_index, _chunk_store
     if _faiss_index is None:
-        if not _INDEX_PATH.exists():
-            raise FileNotFoundError(f"FAISS index not found at {_INDEX_PATH}")
-        _faiss_index = faiss.read_index(str(_INDEX_PATH))
+        if faiss is None or not _INDEX_PATH.exists() or not _META_PATH.exists():
+            return None, []
+        try:
+            _faiss_index = faiss.read_index(str(_INDEX_PATH))
+            with open(_META_PATH, "r", encoding="utf-8") as f:
+                meta = json.load(f)
+            _chunk_store = meta.get("chunks", [])
+        except Exception:
+            return None, []
 
-        with open(_META_PATH, "r", encoding="utf-8") as f:
-            meta = json.load(f)
-        _chunk_store = meta.get("chunks", [])
-
-    return _faiss_index, _chunk_store  # type: ignore[return-value]
+    return _faiss_index, _chunk_store or []
 
 
 # Section label → keyword mapping for light re-ranking by section relevance
@@ -74,6 +79,8 @@ def search_sebi(
         chunk_id, pdf_source, section, page, relevance_score, excerpt
     """
     index, chunks = _load_index()
+    if index is None or not chunks:
+        return []
 
     query_vec = embed_query(query)                     # (1, 384) float32
     scores, indices = index.search(query_vec, min(top_k * 2, len(chunks)))
