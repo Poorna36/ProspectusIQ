@@ -19,7 +19,7 @@ import numpy as np
 from .embeddings import embed_query
 
 # ── Resolve absolute paths regardless of working directory ───────────────────
-_ML_DIR = Path(__file__).resolve().parents[4]   # ml/
+_ML_DIR = Path(__file__).resolve().parents[3]   # ml/  (rag/ -> src/ -> ai-engine/ -> ml/)
 _INDEX_PATH = _ML_DIR / "data" / "vector_db" / "sebi_faiss.index"
 _META_PATH  = _ML_DIR / "data" / "vector_db" / "vector_db_metadata.json"
 

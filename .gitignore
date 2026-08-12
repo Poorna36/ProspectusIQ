@@ -47,6 +47,8 @@ build/
 node_modules/
 
 # --- Database ---
+# NOTE: sqlite.db IS committed so Render has an initial DB to copy to /data
+# The WAL/SHM side-files are ephemeral — keep them ignored
 *.db-wal
 *.db-shm
 
@@ -55,7 +57,7 @@ node_modules/
 
 # --- Vector Database & Large ML Data ---
 ml/data/chroma_db/
-ml/data/vector_db/
+# ml/data/vector_db/   <-- INTENTIONALLY NOT IGNORED: sebi_faiss.index & metadata are required at runtime
 ml/data/sebi_cleaned/
 ml/data/*.pdf
 data/*.pdf

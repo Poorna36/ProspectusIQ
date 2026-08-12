@@ -13,6 +13,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { writeAuditEvent } from './auditService';
 
 const ML_ENGINE_URL = process.env.ML_ENGINE_URL || 'http://localhost:8001';
+const INTERNAL_SERVICE_TOKEN = process.env.INTERNAL_SERVICE_TOKEN || 'prospectusiq-internal-service-token';
 
 interface DraftRequest {
   filingId: string;
@@ -37,7 +38,7 @@ export async function generateDraftAsync(params: DraftRequest): Promise<void> {
       headers: {
         'Content-Type': 'application/json',
         'X-Request-ID': requestId,
-        'X-Internal-Token': 'prospectusiq-internal-service-token',
+        'X-Internal-Token': INTERNAL_SERVICE_TOKEN,
       },
       body: JSON.stringify({
         filingId,

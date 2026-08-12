@@ -3,7 +3,9 @@ import { drizzle } from 'drizzle-orm/better-sqlite3';
 import path from 'path';
 import * as schema from './schema/index';
 
-const DB_PATH = path.resolve(__dirname, '..', '..', 'sqlite.db');
+// In production on Render, DATABASE_URL points to the persistent disk mount.
+// In local dev it falls back to sqlite.db next to the compiled output.
+const DB_PATH = process.env.DATABASE_URL || path.resolve(__dirname, '..', '..', 'sqlite.db');
 
 const sqlite = new Database(DB_PATH);
 

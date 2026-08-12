@@ -22,15 +22,17 @@ dotenv.config();
 const port = parseInt(process.env.PORT || '3001', 10);
 
 const fastify = Fastify({
-  logger: {
-    transport: {
-      target: 'pino-pretty',
-      options: {
-        translateTime: 'SYS:standard',
-        ignore: 'pid,hostname',
-      },
-    },
-  },
+  logger: process.env.NODE_ENV !== 'production'
+    ? {
+        transport: {
+          target: 'pino-pretty',
+          options: {
+            translateTime: 'SYS:standard',
+            ignore: 'pid,hostname',
+          },
+        },
+      }
+    : true,   // plain JSON logs in production (Render captures stdout)
 });
 
 // Register Plugins

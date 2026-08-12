@@ -1,0 +1,58 @@
+services:
+  # ─────────────────────────────────────────────────────────
+  # ProspectusIQ Backend (Node.js / Fastify)
+  # ─────────────────────────────────────────────────────────
+  - type: web
+    name: prospectusiq-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm ci && npm run build
+    startCommand: node dist/server.js
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        value: /data/sqlite.db
+      - key: ML_ENGINE_URL
+        fromService:
+          type: web
+          name: prospectusiq-ml
+          property: hostWithScheme
+      - key: INTERNAL_SERVICE_TOKEN
+        generateValue: true
+    disk:
+      name: sqlite-data
+      mountPath: /data
+      sizeGB: 1
+
+  # ─────────────────────────────────────────────────────────
+  # ProspectusIQ ML Engine (Python / FastAPI / uvicorn)
+  # ─────────────────────────────────────────────────────────
+  - type: web
+    name: prospectusiq-ml
+    runtime: python
+    rootDir: ml/ai-engine
+    buildCommand: pip install -r requirements.txt && python ../../ml/scripts/build_faiss_index.py
+    startCommand: uvicorn src.api.server:app --host 0.0.0.0 --port $PORT
+    plan: free
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false   # You MUST set this in the Render dashboard
+      - key: INTERNAL_SERVICE_TOKEN
+        fromService:
+          type: web
+          name: prospectusiq-backend
+          envVarKey: INTERNAL_SERVICE_TOKEN
+      - key: HF_HOME
+        value: /tmp/hf_cache
+      - key: TRANSFORMERS_CACHE
+        value: /tmp/hf_cache
+      - key: SENTENCE_TRANSFORMERS_HOME
+        value: /tmp/hf_cache
+      - key: PYTHONUNBUFFERED
+        value: "1"
