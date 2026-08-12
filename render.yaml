@@ -17,18 +17,15 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: DATABASE_URL
-        value: /data/sqlite.db
+        value: /tmp/sqlite.db
       - key: ML_ENGINE_URL
         fromService:
           type: web
           name: prospectusiq-ml
-          property: hostWithScheme
+          property: host
       - key: INTERNAL_SERVICE_TOKEN
         generateValue: true
-    disk:
-      name: sqlite-data
-      mountPath: /data
-      sizeGB: 1
+
 
   # ─────────────────────────────────────────────────────────
   # ProspectusIQ ML Engine (Python / FastAPI / uvicorn)

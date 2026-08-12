@@ -12,7 +12,8 @@ import { eq } from 'drizzle-orm';
 import { v4 as uuidv4 } from 'uuid';
 import { writeAuditEvent } from './auditService';
 
-const ML_ENGINE_URL = process.env.ML_ENGINE_URL || 'http://localhost:8001';
+const _rawMlUrl = process.env.ML_ENGINE_URL || 'http://localhost:8001';
+const ML_ENGINE_URL = _rawMlUrl.startsWith('http') ? _rawMlUrl : `https://${_rawMlUrl}`;
 const INTERNAL_SERVICE_TOKEN = process.env.INTERNAL_SERVICE_TOKEN || 'prospectusiq-internal-service-token';
 
 interface DraftRequest {
